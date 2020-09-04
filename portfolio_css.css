@@ -34,6 +34,9 @@ padding:10px;
 font-size:18px;
 color:var(--white);
 }
+.nav-list li:visited{
+  color:var(--white);
+}
 .nav-list li a:visited{
   color:var(--white);
 }
@@ -42,13 +45,11 @@ color:var(--white);
 }
 .nav-list li:hover{
   background-color:var(--blue);
-  cursor:crosshair;
   border-radius:15px;
   border: 2px solid var(--blue);
 }
 .nav-items:hover{
   background-color:var(--blue);
-  cursor:crosshair;
 }
 #main-section{
   width:100%;
@@ -84,6 +85,9 @@ h1{
 #projects{
   background-color:#C8854E;
   height:100vh;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
 }
 .flex-change{
   display:flex;
@@ -92,10 +96,11 @@ h1{
 }
 .flex-change p{
   color:var(--white);
+  font-size:24px;
 }
 .cactus-icon{
-  width:50px;
-  height:50px;
+  width:75px;
+  height:75px;
   border:none;
 }
 a{
@@ -139,4 +144,7 @@ h2{
 }
 #contact h2{
   color:var(--white);
+}
+.icon-space{
+  padding-right:10px;
 }
