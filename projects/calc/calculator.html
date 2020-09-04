@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Calculator</title>
+    <meta charset="utf-8">
+    <meta name = "author" content = "Christopher Risser">
+    <meta name = "description" content = "A calculator to help learn javascript">
+    <link  href= "calcstyle.css" type="text/css" rel = "stylesheet">
+
+  </head>
+  <body>
+
+<h1  id = "demo">Calculator</h1>
+<div id = "warning-dialog"></div>
+<div class = "main-calc">
+  <div id = "currentmath"></div>
+  <div id = "display">
+
+
+  </div>
+    <div id = "grid">
+        <button class = "number" onclick ="operation(7)">7</button>
+        <button class = "number" onclick ="operation(8)">8</button>
+        <button class = "number" onclick ="operation(9)">9</button>
+        <button class = "number" onclick ="action('/')">/</button>
+        <button class = "number" onclick ="operation(4)">4</button>
+        <button class = "number" onclick ="operation(5)">5</button>
+        <button class = "number" onclick ="operation(6)">6</button>
+        <button class = "number" onclick ="action('x')">x</button>
+        <button class = "number" onclick ="operation(1)">1</button>
+        <button class = "number" onclick ="operation(2)">2</button>
+        <button class = "number" onclick ="operation(3)">3</button>
+        <button class = "number" onclick ="action('-')">-</button>
+        <button class = "number" onclick ="operation(0)">0</button>
+        <button class = "number" onclick ="operation('.')">.</button>
+        <button class = "number" onclick ="calculate()">=</button>
+        <button class = "number" onclick ="action('+')">+</button>
+
+
+
+    </div>
+      <div id = "butdiv">
+        <button id = "resetbut" onclick = "reset()">Reset</button>
+      </div>
+
+  </div>
+  <div id = "reset-dialog"></div>
+
+
+  </body>
+  <script src= "calc.js" type="text/javascript"></script>
+</html>

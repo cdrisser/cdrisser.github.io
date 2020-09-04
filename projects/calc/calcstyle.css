@@ -1,0 +1,60 @@
+body{
+  box-sizing: border-box;
+}
+h1{
+  text-align: center;
+}
+.main-calc{
+border: 3px solid black;
+width: 50%;
+margin: auto;
+display: flex;
+flex-direction: column;
+}
+#currentmath{
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+}
+#display{
+  width: 100%;
+  padding: 10px 0;
+  font-size:18px;
+  background-color: #bab7ad;
+  text-align: right;
+  color: blue;
+}
+
+#grid{
+    width: 100%;
+  border-top: 3px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.number{
+margin: 1%;
+  flex: 0 0 23%;
+}
+.number:hover{
+  transform:scale(1.1);
+}
+
+#butdiv{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#resetbut{
+  margin-bottom: 1%;
+}
+#reset-dialog{
+  margin-top:5%;
+  color: red;
+  text-align:center;
+}
+#warning-dialog{
+  color: red;
+  text-align:center;
+}
