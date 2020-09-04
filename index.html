@@ -4,27 +4,45 @@
     <meta charset="utf-8">
     <title>Chris Risser Portfolio</title>
     <script src="test.js" charset="utf-8"></script>
+    <!-- icon kit -->
+    <script src="https://kit.fontawesome.com/ab70dfc5e6.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href="portfolio_css.css">
   </head>
   <body>
     <nav id = "nav-header">
       <ul class = "nav-list">
-        <li><a href="#nav-header" class="nav-items">About</a></li>
-        <li><a href="#" class="nav-items">Projects</a></li>
-        <li><a href="#" class="nav-items">Contact</a></li>
+        <li><a href="#main-section" class="nav-items">About</a></li>
+        <li><a href="#projects" class="nav-items">Projects</a></li>
+        <li><a href="#contact" class="nav-items">Contact</a></li>
       </ul>
     </nav>
-  <section id="about-section" >
+  <section id="main-section">
     <img src="images/profile-pic.jpg" id ="profile-img" alt="profile pic">
-    <h1>&lt;Chris Risser&gt;</h1>
-    <p>A Software Engineer/Web Developer..!</p>
-  </section>
+    <h1>&lt;Chris Risser/&gt;</h1>
+    <div class = "flex-change">
+      <img src = images/cactus.svg alt="cactus icon" class ="cactus-icon">
+      <p>A Software Engineer/Web Developer living in Phoenix, AZ!</p>
+    </div>
+
+</section>
   <section id = "projects">
   <h2>Projects</h2>
   </section>
+  <section id = "contact">
+    <h2>I'm ready to make an impact!</h2>
+      <p> Drop me a line!</p>
+    <div class = "contact-methods">
+      <a class = "contact-me" href="http://www.github.com/cdrisser" target="_blank"><i class="fab fa-github"></i>GitHub</a>
+      <a class = "contact-me" href="https://www.linkedin.com/in/chrisrisser/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+      <a class = "contact-me" href="mailto:cdrisser@gmail.com"><i class="fas fa-at"></i>drop me an e-mail</a>
+    </div>
+  </section>
 
-
+<hr class = "horiz-line">
+<footer
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+</footer>
 
   </body>
 </html>
