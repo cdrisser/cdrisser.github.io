@@ -1,28 +1,49 @@
+html{
+  font-family: 'Raleway', sans-serif;
+}
 body{
   box-sizing: border-box;
+  background-image:radial-gradient(grey,black);
+
 }
-h1{
-  text-align: center;
+.flexadjust{
+  display:flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+
+
 }
+
 .main-calc{
 border: 3px solid black;
-width: 50%;
-margin: auto;
+width: 30%;
 display: flex;
 flex-direction: column;
+
 }
 #currentmath{
   width: 100%;
   text-align: right;
-  font-size: 12px;
+  font-size: 18px;
+  font-weight:600;
+  background-color:#65737e;
+  color:#c73530;
+  border-bottom: 1px solid black;
+  font-family: 'Orbitron', sans-serif;
+
 }
 #display{
   width: 100%;
   padding: 10px 0;
-  font-size:18px;
-  background-color: #bab7ad;
+  height:20%;
+  font-size:30px;
+  background-color:#65737e;
   text-align: right;
-  color: blue;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+  vertical-align: bottom;
+
 }
 
 #grid{
@@ -31,23 +52,46 @@ flex-direction: column;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  height:75%;
 }
 
 .number{
-margin: 1%;
-  flex: 0 0 23%;
+  flex: 0 0 25%;
+  font-size:18px;
+
+}
+button{
+  font-family: inherit;
+  background-color:#343d46;
+  color:white;
+font-size:18px;
 }
 .number:hover{
   transform:scale(1.1);
+  background-color:#65737e;
+  border: 2px solid black;
+  color:black;
 }
+#resetbut:hover{
+  transform:scale(1.1);
+  background-color:#e6241e;
+  border: 2px solid black;
+  color:black;
+}
+
 
 #butdiv{
   width: 100%;
   display: flex;
   justify-content: center;
 }
+.resetdiv{
+width:100%;
+}
 #resetbut{
-  margin-bottom: 1%;
+  width:100%;
+  padding:5px;
+  background-color:#c73530;
 }
 #reset-dialog{
   margin-top:5%;

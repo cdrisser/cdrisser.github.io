@@ -85,9 +85,6 @@ h1{
 #projects{
   background-color:#C8854E;
   height:100vh;
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
 }
 .flex-change{
   display:flex;

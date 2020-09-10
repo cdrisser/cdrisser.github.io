@@ -34,7 +34,7 @@ function action(input){
 }
 
 function reset(input){
-  //reset was before calculate - reset everything and let use know reset is occuring
+  //reset was before calculate - reset everything and let user know reset is occuring
   if(!(input == 1)){
 
     document.getElementById('display').innerHTML = "";
@@ -47,15 +47,18 @@ function reset(input){
   displaystr = "";
   total = 0;
 }
+
 function dispWarning(){
   document.getElementById('warning-dialog').innerHTML = "No input to operate on";
   setTimeout(()=>{
     document.getElementById('warning-dialog').innerHTML = "";
   },3000);
 }
+
 function currentMath(input){
   if(document.getElementById('currentmath').innerHTML == ''){
     total = Number(displaystr);
+    console.log(total);
     return;
   }
   switch(input){
