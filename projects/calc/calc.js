@@ -1,6 +1,5 @@
 
 let displaystr = "";
-let total =0;
 const num = document.getElementsByClassName('number');
 let resetDisplay = false;
 let calcArr = [];
@@ -22,7 +21,7 @@ function operation(a=""){
 }
 
 function action(input){
-  if(displaystr==""&&calcArr.length<1){
+  if(displaystr=="" && calcArr.length<1){
     return;
   }
     addToArr(input);
@@ -54,12 +53,14 @@ function addToArr(input){
 
 function calculate(){
 let total = calcArr[0];
-if(displaystr ==""){
+if(calcArr.length<2){
   return;
 }
 else{
-calcArr.push(Number(document.getElementById('display').innerHTML));
-
+  let input = document.getElementById('display').innerHTML;
+  calcArr.push(Number(input));
+  let storeDisplayStr = document.getElementById('currentmath').innerHTML;
+  document.getElementById('currentmath').innerHTML = `${storeDisplayStr} ${input}`;
   for(let i =1; i<calcArr.length;i+=2){
     switch(calcArr[i]){
        case'/':
@@ -78,6 +79,12 @@ calcArr.push(Number(document.getElementById('display').innerHTML));
     }
   }
   document.getElementById('display').innerHTML = total;
+  calcArr = [];
+  document.getElementById('currentmath').innerHTML = '';
+  displaystr = total;
+    total =0;
+
+
 }
 
 }
