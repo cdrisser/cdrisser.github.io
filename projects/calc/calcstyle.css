@@ -31,11 +31,12 @@ flex-direction: column;
   color:#c73530;
   border-bottom: 1px solid black;
   font-family: 'Orbitron', sans-serif;
+  padding: 15px 0;
 
 }
 #display{
   width: 100%;
-  padding: 10px 0;
+  padding: 15px 0;
   height:20%;
   font-size:30px;
   background-color:#65737e;
@@ -58,6 +59,7 @@ flex-direction: column;
 .number{
   flex: 0 0 25%;
   font-size:18px;
+  padding: 20px 0;
 
 }
 button{

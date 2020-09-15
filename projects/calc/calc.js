@@ -53,5 +53,31 @@ function addToArr(input){
 }
 
 function calculate(){
+let total = calcArr[0];
+if(displaystr ==""){
+  return;
+}
+else{
+calcArr.push(Number(document.getElementById('display').innerHTML));
+
+  for(let i =1; i<calcArr.length;i+=2){
+    switch(calcArr[i]){
+       case'/':
+       total/=calcArr[i+1];
+       console.log(total);
+       break;
+       case'x':
+       total*=calcArr[i+1];
+       break;
+       case'+':
+       total+=calcArr[i+1];
+       break;
+       case'-':
+       total-=calcArr[i+1];
+       break;
+    }
+  }
+  document.getElementById('display').innerHTML = total;
+}
 
 }
