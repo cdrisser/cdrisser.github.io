@@ -2,13 +2,14 @@
 let displaystr = "";
 let total =0;
 const num = document.getElementsByClassName('number');
-var resetDisplay = false;
+let resetDisplay = false;
+let calcArr = [];
 //creates border so user can see what button they pushed
 for(var i=0; i<num.length; i++){
 num[i].addEventListener("mousedown", (event)=>{
   event.target.style.border = "2px solid black";
 })}
-//creates border so user can see what button they pushed
+//removes border after push
 for(var i=0; i<num.length; i++){
 num[i].addEventListener("mouseup", (event)=>{
   event.target.style.border = "";
@@ -21,70 +22,36 @@ function operation(a=""){
 }
 
 function action(input){
-  if(displaystr == ''){
-    dispWarning();
+  if(displaystr==""&&calcArr.length<1){
+    return;
   }
-  else{
-    currentMath(input);
+    addToArr(input);
     let storeDisplayStr = document.getElementById('currentmath').innerHTML;
     document.getElementById('currentmath').innerHTML = `${storeDisplayStr} ${displaystr} ${input}`;
     document.getElementById('display').innerHTML = '';
     displaystr = '';
-    }
+    console.log(document.getElementById('display').innerHTML);
+
 }
 
 function reset(input){
-  //reset was before calculate - reset everything and let user know reset is occuring
-  if(!(input == 1)){
-
-    document.getElementById('display').innerHTML = "";
-  document.getElementById('reset-dialog').innerHTML = "Reset Complete";
-  setTimeout(()=>{
-    document.getElementById('reset-dialog').innerHTML = "";
-  },3000);
-  }
-  document.getElementById('currentmath').innerHTML = "";
-  displaystr = "";
-  total = 0;
 }
-
-function dispWarning(){
-  document.getElementById('warning-dialog').innerHTML = "No input to operate on";
-  setTimeout(()=>{
-    document.getElementById('warning-dialog').innerHTML = "";
-  },3000);
-}
-
-function currentMath(input){
-  if(document.getElementById('currentmath').innerHTML == ''){
-    total = Number(displaystr);
-    console.log(total);
+//adds number and operation to arraylist
+function addToArr(input){
+  if(displaystr == ""){
+    let storeDisplayStr = document.getElementById('currentmath').innerHTML;
+    let newStoreDisplayStr = storeDisplayStr.slice(0,storeDisplayStr.length-1);
+    document.getElementById('currentmath').innerHTML = newStoreDisplayStr;
+    calcArr.pop();
+    calcArr.push(input);
+    console.log(`calcArr is ${calcArr}`);
     return;
   }
-  switch(input){
-    case '/':
-    var test = total/=(Number(displaystr));
-    console.log(test);
-    break;
-    case '+':
-    total+=Number(displaystr);
-    console.log(total);
-    break;
-    case '-':
-    total-=Number(displaystr);
-    console.log(total);
-    break;
-    case 'x':
-    total *= Number(displaystr);
-    console.log(total);
-    break;
-  }
+  calcArr.push(Number(document.getElementById('display').innerHTML));
+  calcArr.push(input);
+  console.log(`calcArr is ${calcArr}`);
 }
+
 function calculate(){
-  //resetDisplay = true;
-let getLastInput = document.getElementById('currentmath').innerHTML;
-currentMath(getLastInput[getLastInput.length-1]);
-console.log(getLastInput);
-document.getElementById('display').innerHTML = String(total);
-reset(1);
+
 }
