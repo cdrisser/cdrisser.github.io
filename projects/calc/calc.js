@@ -15,25 +15,31 @@ num[i].addEventListener("mouseup", (event)=>{
 })}
 
 function operation(a=""){
-    displaystr += a;
-    document.getElementById('display').innerHTML = displaystr;
 
+displaystr += a;
+document.getElementById('display').innerHTML = displaystr;
 }
 
 function action(input){
   if(displaystr=="" && calcArr.length<1){
     return;
   }
-    addToArr(input);
-    let storeDisplayStr = document.getElementById('currentmath').innerHTML;
-    document.getElementById('currentmath').innerHTML = `${storeDisplayStr} ${displaystr} ${input}`;
-    document.getElementById('display').innerHTML = '';
-    displaystr = '';
-    console.log(document.getElementById('display').innerHTML);
 
+    if(!isNaN(Number(document.getElementById('display').innerHTML))){
+      addToArr(input);
+      let storeDisplayStr = document.getElementById('currentmath').innerHTML;
+      document.getElementById('currentmath').innerHTML = `${storeDisplayStr} ${displaystr} ${input}`;
+      document.getElementById('display').innerHTML = '';
+      displaystr = '';
+      console.log(document.getElementById('display').innerHTML);
+}
 }
 
 function reset(input){
+  calcArr = [];
+  displaystr = "";
+  document.getElementById('currentmath').innerHTML = "";
+  document.getElementById('display').innerHTML = "";
 }
 //adds number and operation to arraylist
 function addToArr(input){
@@ -46,9 +52,11 @@ function addToArr(input){
     console.log(`calcArr is ${calcArr}`);
     return;
   }
+
   calcArr.push(Number(document.getElementById('display').innerHTML));
   calcArr.push(input);
   console.log(`calcArr is ${calcArr}`);
+
 }
 
 function calculate(){
@@ -78,13 +86,15 @@ else{
        break;
     }
   }
-  document.getElementById('display').innerHTML = total;
+  console.log(typeof total);
+  if(!isNaN(total)){
+  let totalwithprec = total.toPrecision(4);
+  document.getElementById('display').innerHTML = totalwithprec;
   calcArr = [];
   document.getElementById('currentmath').innerHTML = '';
-  displaystr = total;
-    total =0;
-
-
+  displaystr = totalwithprec;
+  total =0;
+}
 }
 
 }
