@@ -26,7 +26,7 @@ html {
   background-color:black;
   display:flex;
   padding-left:60%;
-  justify-content: space-between;
+  justify-content: flex-end;
 
 }
 .nav-list li{
@@ -42,6 +42,7 @@ color:var(--white);
 }
 .nav-items{
   text-decoration: none;
+  margin: 5px;
 }
 .nav-list li:hover{
   background-color:var(--blue);
@@ -144,4 +145,16 @@ h2{
 }
 .icon-space{
   padding-right:10px;
+}
+.project-details{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.project_ss{
+  max-width:100%;
+  width:200px;
+  height:auto;
+  border: 3px solid black;
+  margin: auto;
 }
