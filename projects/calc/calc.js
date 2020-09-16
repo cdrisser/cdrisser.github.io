@@ -3,6 +3,7 @@ let displaystr = "";
 const num = document.getElementsByClassName('number');
 let resetDisplay = false;
 let calcArr = [];
+let resetCalc = false;
 //creates border so user can see what button they pushed
 for(var i=0; i<num.length; i++){
 num[i].addEventListener("mousedown", (event)=>{
@@ -15,7 +16,10 @@ num[i].addEventListener("mouseup", (event)=>{
 })}
 
 function operation(a=""){
-
+if(resetCalc){
+  displaystr= "";
+  resetCalc = false;
+}
 displaystr += a;
 document.getElementById('display').innerHTML = displaystr;
 }
@@ -94,6 +98,7 @@ else{
   document.getElementById('currentmath').innerHTML = '';
   displaystr = totalwithprec;
   total =0;
+  resetCalc = true;
 }
 }
 
