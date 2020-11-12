@@ -36,12 +36,20 @@ button{
 .buttons {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 10%;
+    margin: auto;
+    margin-bottom: 25px;
 }
 
 .column-select {
+    border-radius: 15px;
+    background-color:#efdfc1;
+    padding:5px 50px;
+    height:25px;
     
 }
-.buttons{
-    margin-bottom: 25px;
+#column-fill{
+    font-family:Korrina,serif;
+    font-size: 24px;
+    color:#efdfc1;
 }
