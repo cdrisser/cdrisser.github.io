@@ -1,0 +1,47 @@
+html{
+  font-family: Korinna, serif;
+}
+#main-board{
+  display:flex;
+  width:25%;
+  margin:auto;
+}
+body{
+  background-color:#060CE9;
+}
+h1{
+font-family:anonymous;    
+}
+h1, h3, p{
+  text-align: center;
+}
+#each-col{
+  display: flex;
+}
+.col{
+  display:flex;
+  flex-direction: column;
+}
+button{
+  font-family: Korinna, serif;
+  color:black;
+}
+
+.jeopardy-logo {
+    max-width: 100%;
+    margin:  25px auto;
+    display: block;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.column-select {
+    
+}
+.buttons{
+    margin-bottom: 25px;
+}
