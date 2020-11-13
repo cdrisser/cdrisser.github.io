@@ -12,7 +12,7 @@ $('.col').remove();
 });
 
 async function fetchQandAs(id,i){
-  const fetchstr = `http://jservice.io/api/clues?category=${id}`
+  const fetchstr = `https://jservice.io/api/clues?category=${id}`
   console.log(fetchstr);
   const response = await fetch(fetchstr);
   const answers = await response.json();
@@ -53,7 +53,7 @@ function addCols(numCols){
   });
 }
 async function fetchCategoryJSON() {
-  const response = await fetch('http:jservice.io/api/categories?count=100');
+  const response = await fetch('https:jservice.io/api/categories?count=100');
   const answers = await response.json();
   return answers;
 }
