@@ -23,8 +23,11 @@ buttons*/
 function loadQuestions(answers,colnum){
   for(let i = 0;i<answers.length; i++){
      $(`#category${colnum}-${i}`).click(()=>{
+         $(`#category${colnum}-${i}`).css("font-size","16px");
+         $(`#category${colnum}-${i}`).css("color","white");
         $(`#category${colnum}-${i}`).html(answers[i].question);
         setTimeout(()=>{
+            
           $(`#category${colnum}-${i}`).html(answers[i].answer);
         },7000)
      });
