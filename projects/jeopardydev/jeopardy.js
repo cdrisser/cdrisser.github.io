@@ -30,17 +30,19 @@ function loadQuestions(answers,colnum){
      });
   }
   //shows board after data loads from api
-  $('#main-board').show();
+  $('#main-board').show().get(0).scrollIntoView();
+
+  
 }
 function addCols(numCols){
   console.log(numCols);
   let intamt = 200;
   for(let i=0;i<numCols;i++){
     let newdiv = $(`<div class=col></div>`);
-    let butcat = $(`<button class = square id=category${i}></button>`);
+    let butcat = $(`<button class = \"square title \" id=category${i}></button>`);
     newdiv.append(butcat);
     for(let j=0;j<5;j++){
-      let but = $(`<button class = square id=category${i}-${j}>$${intamt}</button>`);
+      let but = $(`<button class = \"square dollaramt \" id=category${i}-${j}>$${intamt}</button>`);
       newdiv.append(but);
       intamt+=200;
     }

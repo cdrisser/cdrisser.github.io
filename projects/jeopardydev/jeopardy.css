@@ -10,7 +10,8 @@ html{
   display:flex;
   width: 50%;
 justify-content: center;
-  margin: auto;
+  margin: 25px auto ;
+    
 }
 body{
   background-color:black;
@@ -60,9 +61,23 @@ button{
     color:#efdfc1;
 }
 .square{
+        font-family: helvetica;
+
     padding:2px;
-    width:100px;
-    height: 100px;
+    width:150px;
+    height: 125px;
     background-color: #130081;
     color: white;
+    text-shadow: 2px 2px black;
+    font-weight:600;
+}
+.dollaramt{
+    font-size:48px;
+    color:#d3a34e;
+    
+    
+}
+.title{
+    font-size:24px;
+    
 }
