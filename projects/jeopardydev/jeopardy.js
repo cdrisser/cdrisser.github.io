@@ -53,7 +53,7 @@ function addCols(numCols){
   });
 }
 async function fetchCategoryJSON() {
-  const response = await fetch('https:jservice.io/api/categories?count=100');
+  const response = await fetch('https://jservice.io/api/categories?count=100');
   const answers = await response.json();
   return answers;
 }
