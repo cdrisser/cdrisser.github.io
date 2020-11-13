@@ -37,15 +37,16 @@ function addCols(numCols){
   let intamt = 200;
   for(let i=0;i<numCols;i++){
     let newdiv = $(`<div class=col></div>`);
-    let butcat = $(`<button id=category${i}></button>`);
+    let butcat = $(`<button class = square id=category${i}></button>`);
     newdiv.append(butcat);
     for(let j=0;j<5;j++){
-      let but = $(`<button id=category${i}-${j}>$${intamt}</button>`);
+      let but = $(`<button class = square id=category${i}-${j}>$${intamt}</button>`);
       newdiv.append(but);
       intamt+=200;
     }
     intamt = 200;
     $("#each-col").append(newdiv);
+     
   }
   fetchCategoryJSON().then(answers => {
   createTitle(answers, numCols);
@@ -59,13 +60,17 @@ async function fetchCategoryJSON() {
 }
 
 function createTitle(ans, numCols){
-  console.log(ans)
+   //add title to array so can check that it's not already been chosen
+    let checkArr ={};
+  
   //create randomnumber between 1-100 to get random category from api
   for(let i =0; i<numCols; i++){
-    console.log(numCols);
   const randomnumber = Math.floor(Math.random()*(100-1)+1);
   const newstr = ans[randomnumber].title.replace(/\b\w/g, l => l.toUpperCase());
   document.getElementById(`category${i}`).innerHTML = newstr;
-  fetchQandAs(ans[randomnumber].id, i );
+  fetchQandAs(ans[randomnumber].id, i);
+  //remove that category from possible choices so no duplicates
+  ans.splice(randomnumber,1);
+     
 }
 }

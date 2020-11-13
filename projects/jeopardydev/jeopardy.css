@@ -1,13 +1,19 @@
+
 html{
   font-family: Korinna, serif;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 #main-board{
   display:flex;
-  width:25%;
-  margin:auto;
+  width: 50%;
+justify-content: center;
+  margin: auto;
 }
 body{
-  background-color:#060CE9;
+  background-color:black;
 }
 h1{
 font-family:anonymous;    
@@ -52,4 +58,11 @@ button{
     font-family:Korrina,serif;
     font-size: 24px;
     color:#efdfc1;
+}
+.square{
+    padding:2px;
+    width:100px;
+    height: 100px;
+    background-color: #130081;
+    color: white;
 }
