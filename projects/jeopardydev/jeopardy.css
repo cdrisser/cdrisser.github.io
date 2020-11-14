@@ -12,6 +12,7 @@ html{
 justify-content: center;
   margin: 25px auto ;
     
+    
 }
 body{
   background-color:black;
@@ -61,8 +62,8 @@ button{
     color:#efdfc1;
 }
 .square{
-        font-family: helvetica;
-
+    font-family: helvetica;
+    border:3px solid black;
     padding:2px;
     width:150px;
     height: 125px;
