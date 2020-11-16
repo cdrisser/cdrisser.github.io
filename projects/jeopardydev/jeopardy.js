@@ -62,7 +62,7 @@ function addCols(numCols){
   let intamt = 200;
   for(let i=0;i<numCols;i++){
     let newdiv = $(`<div class=col></div>`);
-    let butcat = $(`<button class = \"square title \" id=category${i}></button>`);
+    let butcat = $(`<button class = \"square title \" id=category${i} disabled></button>`);
     newdiv.append(butcat);
     for(let j=0;j<5;j++){
       let but = $(`<button class = \"square dollaramt \" id=category${i}-${j}>$${intamt}</button>`);
