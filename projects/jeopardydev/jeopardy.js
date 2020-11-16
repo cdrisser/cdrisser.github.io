@@ -1,5 +1,6 @@
 
 $(document).ready(()=>{
+    $("#countdown").hide();
   $("button").click(()=>{
 //remove column in case it middle of Game
 $('.col').remove();
@@ -7,6 +8,7 @@ $('.col').remove();
   addCols(Number($(document.activeElement).val()));
   //hides board while data loads from api
   $('#main-board').hide();
+    
 
   });
 });
@@ -24,18 +26,35 @@ function loadQuestions(answers,colnum){
   for(let i = 0;i<answers.length; i++){
      $(`#category${colnum}-${i}`).click(()=>{
          //adjust font from dollar sign font to reflect correct game board
-         $(`#category${colnum}-${i}`).css("font-size","16px");
+         $(`#category${colnum}-${i}`).css("font-size","14px");
          $(`#category${colnum}-${i}`).css("color","white");
+         $(`#category${colnum}-${i}`).css("transform","scale(1.5)");
+
+         //show the question when the question is clicked
         $(`#category${colnum}-${i}`).html(answers[i].question);
-        setTimeout(()=>{
-            
-          $(`#category${colnum}-${i}`).html(answers[i].answer);
-        },7000)
+         //show the countdown timer
+         $("#countdown").show();
+         let percent = 30;
+         let timer = setInterval(()=>{
+             console.log(percent);
+             $("#countdown").css("width",`${percent}%`);
+             percent-=5;
+             if (percent < 0){
+                 clearInterval(timer);
+                 $(`#category${colnum}-${i}`).html(answers[i].answer);
+                 //show answer for a second transformed scale then scale back
+                 setTimeout(()=>{
+             $(`#category${colnum}-${i}`).css("transform","none");
+         },1000)
+             }
+         },1000);
      });
+      
   }
   //shows board after data loads from api
   $('#main-board').show().get(0).scrollIntoView();
-
+    //turn off click listener since it was chosen already
+    
   
 }
 function addCols(numCols){
