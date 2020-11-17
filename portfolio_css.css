@@ -34,15 +34,11 @@ padding:10px;
 font-size:18px;
 color:var(--white);
 }
-.nav-list li:visited{
-  color:var(--white);
-}
-.nav-list li a:visited{
-  color:var(--white);
-}
+
 .nav-items{
   text-decoration: none;
-  margin: 5px;
+  margin: 15px;
+  color:var(--white);
 }
 .nav-list li:hover{
   background-color:var(--blue);
@@ -51,6 +47,9 @@ color:var(--white);
 }
 .nav-items:hover{
   background-color:var(--blue);
+}
+.nav-items:visited{
+  color:var(--white);
 }
 #main-section{
   width:100%;
@@ -82,12 +81,13 @@ h1{
   font-weight:700;
   font-size:72px;
   margin-top:15px;
-  color: rgba(6,74,58,.7);
+  color: rgb(6,74,58);
   
 }
 #projects{
   background-color:#C8854E;
   height:100vh;
+
 }
 .flex-change{
   display:flex;
@@ -151,15 +151,22 @@ h2{
 }
 .project-details{
   display:flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  width:80%;
+  margin:auto;
+}
+.project_ind{
+  margin:15px;
+  padding:50px;
+  
 }
 .project_ss{
-  max-width:100%;
-  width:200px;
-  height:auto;
+  width: 200px;
+  height:200px;
+  object-fit: contain;
   border: 3px solid black;
-  margin: auto;
+  background-color:black;
 }
 .resume{
 	font-size:18px;
@@ -170,4 +177,13 @@ h2{
 	margin:5px;
 	border-radius: 15px;
 	background-color: rgba(8, 98, 77,.7);
+}
+.proj-title{
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(6,74,58);
+}
+.proj-title:visited{
+  background-color:var(--white);
 }
