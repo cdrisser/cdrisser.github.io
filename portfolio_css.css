@@ -180,7 +180,6 @@ h2{
 	color:inherit;
 	padding: 15px;
 	border:3px solid black;
-	
 	margin-top:25px;
 	border-radius: 15px;
 	background-color: rgba(8, 98, 77,.7);
@@ -194,4 +193,22 @@ h2{
 }
 .proj-title:visited{
   background-color:var(--white);
+}
+.resumedetails{
+    display:flex;
+    flex-direction: column;
+    background:white;
+    position:absolute;
+    z-index: 1;
+}
+.close-resume {
+    width:10%;
+    color:black;
+    background:grey;
+    align-self: flex-end;
+}
+
+.skills-container {
+    display:flex;
+    justify-content: center;
 }
