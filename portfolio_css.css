@@ -53,7 +53,7 @@ color:var(--white);
 }
 #main-section{
   width:100%;
-  background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("images/succs.jpg");
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("images/succs.jpg");
   background-size:cover;
   height:100vh;
   display:flex;
@@ -84,6 +84,12 @@ h1{
   color: rgb(6,74,58);
   
 }
+h3{
+  font-weight:500;
+  font-size:30px;
+  margin:15px;
+  color: rgb(6,74,58);
+}
 #projects{
   background-color:#C8854E;
   height:100vh;
@@ -104,7 +110,8 @@ h1{
   border:none;
   color:var(--white);
 }
-a{
+a
+{
   text-decoration:none;
 }
 #contact{
@@ -173,10 +180,11 @@ h2{
 	color:inherit;
 	padding: 15px;
 	border:3px solid black;
-	align-items:flex-start;
-	margin:5px;
+	
+	margin-top:25px;
 	border-radius: 15px;
 	background-color: rgba(8, 98, 77,.7);
+  position:absolute;
 }
 .proj-title{
   display: block;

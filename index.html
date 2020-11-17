@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Chris Risser Portfolio</title>
-    <script src="test.js" charset="utf-8"></script>
     <!-- icon kit -->
     <script src="https://kit.fontawesome.com/ab70dfc5e6.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type = "text/javascript" src = "portfolio.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href="portfolio_css.css">
+
+
   </head>
   <body>
     <nav id = "nav-header">
@@ -21,14 +24,18 @@
     <img src="images/profile-pic.jpg" id ="profile-img" alt="profile pic">
     <h1>&lt;Chris Risser/&gt;</h1>
     <div class = "flex-change">
-      <img src = images/cactus.svg alt="cactus icon" class ="cactus-icon">
-      <p>A Software Engineer - Web Developer living in Phoenix, AZ!</p>
+      <h3>A Software Engineer - Web Developer living in Phoenix, AZ!</h3>
 
     </div>
-    <div class = "flex-change">
-    <a href="#" class = "resume">Education</a>
-    <a href="#" class = "resume">School Projects</a>
-    <a href="#" class = "resume">Experience</a>
+    <div class = "flex-change resumeexpand">
+    <div resumedetails>
+      test <br><br>
+      test <br>
+      test
+
+    </div>
+    <a href="#" class = "resume">Resume</a>
+    
     </div>
 
 </section>
@@ -43,12 +50,10 @@
         <img src = "images/project_pics/jeopardy_ss.png" alt = "project screenshot" class ="project_ss">
         <a href="projects/jeopardydev/index.html" class = "proj-title">Jeopardy </a>
       </div>
-      
+
     </div>
   </section>
   <section id = "contact">
-    <h2>I'm ready to make an impact!</h2>
-      <p> Contact me here:</p>
     <div class = "contact-methods">
       <a class = "contact-me" href="http://www.github.com/cdrisser" target="_blank"><i class="fab fa-github icon-space" ></i>GitHub</a>
       <a class = "contact-me" href="https://www.linkedin.com/in/chrisrisser/" target="_blank"><i class="fab fa-linkedin icon-space"></i>LinkedIn</a>
@@ -62,4 +67,5 @@ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
 </footer>
 
   </body>
+  
 </html>
