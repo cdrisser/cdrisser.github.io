@@ -1,4 +1,4 @@
-
+let timer
 $(document).ready(()=>{
     $("#countdown").hide();
   $("button").click(()=>{
@@ -36,7 +36,6 @@ function loadQuestions(answers,colnum){
          $("#countdown").show();
          let percent = 30;
          let timer = setInterval(()=>{
-             console.log(percent);
              $("#countdown").css("width",`${percent}%`);
              percent-=5;
              if (percent < 0){
@@ -45,6 +44,8 @@ function loadQuestions(answers,colnum){
                  //show answer for a second transformed scale then scale back
                  setTimeout(()=>{
              $(`#category${colnum}-${i}`).css("transform","none");
+                    //disable button after clicked 
+                     $(`#category${colnum}-${i}`).attr("disabled", true);
          },1000)
              }
          },1000);
@@ -58,7 +59,6 @@ function loadQuestions(answers,colnum){
   
 }
 function addCols(numCols){
-  console.log(numCols);
   let intamt = 200;
   for(let i=0;i<numCols;i++){
     let newdiv = $(`<div class=col></div>`);
@@ -85,13 +85,14 @@ async function fetchCategoryJSON() {
 }
 
 function createTitle(ans, numCols){
-   //add title to array so can check that it's not already been chosen
-    let checkArr ={};
-  
+    //start at 100 (what the api allows) of categories and subtract one after its chosen to ensure no dups
+    let titleNum = 100;
+    console.log(ans);
   //create randomnumber between 1-100 to get random category from api
   for(let i =0; i<numCols; i++){
-  const randomnumber = Math.floor(Math.random()*(100-1)+1);
-  const newstr = ans[randomnumber].title.replace(/\b\w/g, l => l.toUpperCase());
+  const randomnumber = Math.floor(Math.random()*((titleNum--)-1)+1);
+       console.log(titleNum);
+  const newstr = ans[randomnumber].title.replace(/\b\w/g, title => title.toUpperCase());
   document.getElementById(`category${i}`).innerHTML = newstr;
   fetchQandAs(ans[randomnumber].id, i);
   //remove that category from possible choices so no duplicates
