@@ -1,16 +1,19 @@
 $(document).ready(()=>{
 $(".resumedetails").hide();
+    
 	$(".resume").click(()=>{
 		$(".resume").hide();
-        $(".resumedetails").show().animate({
-      left: '5%',
-      opacity: '1',
-      width: '100vh',
-      height: '100vh'
-    },1500);
+        $(".resumedetails").show().addClass("animate__animated animate__fadeInBottomLeft")
 	});
 $(".close-resume").click(()=>{
-    $(".resumedetails").hide();
+    $(".resumedetails").addClass("animate__animated animate__fadeOutBottomLeft");
+    setTimeout(()=>{
+        $(".resumedetails").hide();
+        $(".resumedetails").removeClass("animate__animated animate__fadeOutBottomLeft");
+    },500);
+    
     $(".resume").show();
-})
+    
+});
+
 });
