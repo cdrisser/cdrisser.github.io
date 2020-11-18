@@ -32,6 +32,8 @@ function loadQuestions(answers,colnum){
 
          //show the question when the question is clicked
         $(`#category${colnum}-${i}`).html(answers[i].question);
+         //disable the other buttons so 1 at a time
+         $("button").attr("disabled", "true");
          //show the countdown timer
          $("#countdown").show();
          let percent = 30;
@@ -46,6 +48,7 @@ function loadQuestions(answers,colnum){
              $(`#category${colnum}-${i}`).css("transform","none");
                     //disable button after clicked 
                      $(`#category${colnum}-${i}`).attr("disabled", true);
+                     $("button").removeAttr("disabled");
          },1000)
              }
          },1000);
