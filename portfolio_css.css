@@ -274,10 +274,9 @@ h2{
 .close-background {
     display:flex;
     justify-content: center;
-    height:5%;
+    height: 60px;
     width:100%;
     align-items: center;
-    font-weight:900;
 }
 
 .header-seperator {
