@@ -3,7 +3,7 @@ $(".resumedetails").hide();
 	$(".resume").click(()=>{
 		$(".resume").hide();
         $(".resumedetails").show().animate({
-      left: '25%',
+      left: '5%',
       opacity: '1',
       width: '100vh',
       height: '100vh'
