@@ -6,11 +6,11 @@ $(".resumedetails").hide();
         $(".resumedetails").show().addClass("animate__animated animate__fadeInBottomLeft")
 	});
 $(".close-resume").click(()=>{
-    $(".resumedetails").addClass("animate__animated animate__fadeOutBottomLeft");
+    $(".resumedetails").addClass("animate__animated animate__hinge");
     setTimeout(()=>{
         $(".resumedetails").hide();
         $(".resumedetails").removeClass("animate__animated animate__fadeOutBottomLeft");
-    },500);
+    },2000);
     
     $(".resume").show();
     
