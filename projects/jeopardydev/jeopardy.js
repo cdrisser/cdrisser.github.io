@@ -47,6 +47,7 @@ function loadQuestions(answers,colnum){
                  setTimeout(()=>{
              $(`#category${colnum}-${i}`).css("transform","none");
                     //disable button after clicked 
+                     $(`#category${colnum}-${i}`).addClass("animate__animated animate__flipOutY");
                      $(`#category${colnum}-${i}`).attr("disabled", true);
                      $("button").removeAttr("disabled");
          },1000)
