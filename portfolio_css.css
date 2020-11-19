@@ -182,7 +182,7 @@ h2{
 .resume{
 	font-size:18px;
 	color:inherit;
-	padding: 15px 60px;
+	padding: 15px 45px;
 	border:3px solid black;
 	margin-top:25px;
 	border-radius: 15px;
@@ -292,12 +292,14 @@ h2{
     flex-direction: column;
     width: 100%;
     margin:auto;
-    background-color:aliceblue;
+    background-color:#DCEDC8;
+    margin-top:25px;
 }
 
 .navbar {
     margin:15px;
     color:grey;
+    font-size: 18px;
 }
 .navbar:visited {
     color:grey;
@@ -307,4 +309,11 @@ h2{
 
 .header-details {
     margin-left:auto;
+}
+
+.education {
+     display:flex;
+    justify-content: flex-start;
+    width:100%;
+    margin-left:35%;
 }

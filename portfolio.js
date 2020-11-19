@@ -9,8 +9,9 @@ $(".close-resume").click(()=>{
     $(".resumedetails").addClass("animate__animated animate__hinge");
     setTimeout(()=>{
         $(".resumedetails").hide();
-        $(".resumedetails").removeClass("animate__animated animate__fadeOutBottomLeft");
-    },2000);
+        $(".resumedetails").removeClass("animate__animated animate__hinge");
+        $(".resumedetails").removeClass("animate__animated animate__fadeInBottomLeft");
+    },1500);
     
     $(".resume").show();
     
