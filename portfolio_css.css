@@ -102,10 +102,7 @@ h4{
   margin:15px auto;
 justify-content: center;
 }
-.flex-change p{
-  
-  font-size:24px;
-}
+
 .cactus-icon{
   width:75px;
   height:75px;
@@ -330,22 +327,23 @@ h2{
 #experience-container {
     display:flex;
     flex-direction: column;
+    padding:0 75px;
 }
 
+
 .experience {
-    width:20%;
-    margin:2.5%;
+
     border-left:2px solid black;
     padding-left:1%;
-    flex: 1 0 40%;
+    flex: 1 0 20%;
 }
 .experience p{
     font-weight: 600;
 }
 
-.experience-container {
+.experience-wrap {
     display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .experience-header {
@@ -359,4 +357,23 @@ h2{
 .experience-header h2{
     
     text-align: center;
+}
+.experience-responsive {
+    display: flex;
+}
+
+.experience-titles {
+    display:flex;
+    flex-direction: column;
+    margin-right:5%;
+}
+
+.experience-details {
+    border:5px solid black;
+}
+
+.experience-hover {
+    font-size:12px;
+    margin-bottom: 5px;
+
 }
