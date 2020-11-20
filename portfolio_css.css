@@ -101,7 +101,6 @@ h4{
   display:flex;
   margin:15px auto;
 justify-content: center;
-    padding-left:7.5%;
 }
 .flex-change p{
   
@@ -314,7 +313,7 @@ h2{
 }
 
 .education {
-    width:55%;
+    width:100%;
     margin:25px;
     
     padding:15px;
@@ -334,14 +333,10 @@ h2{
     max-width:400px;   
     height:auto;
    padding-bottom: 10px;
+    margin:50px
 }
 
-.diploma-container {
-    width:35%;
-    display:flex;
-    justify-content: center;
-    align-content: center;
-}
+
 
 #experience-container {
     display:flex;
@@ -353,6 +348,7 @@ h2{
     margin:2.5%;
     border-left:2px solid black;
     padding-left:1%;
+    flex: 1 0 40%;
 }
 
 .experience-container {
