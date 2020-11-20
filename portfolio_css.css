@@ -269,7 +269,6 @@ h2{
   margin:15px;
   font-family: 'Slabo 27px', serif;
 }
-
 .close-background {
     display:flex;
     justify-content: center;
@@ -277,7 +276,6 @@ h2{
     width:100%;
     align-items: center;
 }
-
 .header-seperator {
     border: 2px solid black;
     height:2px;
@@ -285,7 +283,6 @@ h2{
     margin: 0 auto 15px;
     
 }
-
 #education-container {
     display: flex;
     width: 100%;
@@ -293,10 +290,7 @@ h2{
     background-color:#DCEDC8;
     height:25%;
     margin:25px auto;
-
-    
 }
-
 .navbar {
     margin:15px;
     color:grey;
@@ -306,16 +300,13 @@ h2{
     color:grey;
 }
 
-
-
 .header-details {
     margin-left:auto;
+    margin-right: ;
 }
 
 .education {
-    width:100%;
     margin:25px;
-    
     padding:15px;
     border:1px solid black;
     border-radius: 5px;
@@ -332,11 +323,9 @@ h2{
     width:100%;
     max-width:400px;   
     height:auto;
-   padding-bottom: 10px;
+    padding-bottom: 10px;
     margin:50px
 }
-
-
 
 #experience-container {
     display:flex;
@@ -350,8 +339,24 @@ h2{
     padding-left:1%;
     flex: 1 0 40%;
 }
+.experience p{
+    font-weight: 600;
+}
 
 .experience-container {
     display: flex;
     flex-wrap: wrap;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.experience-header p {
+    font-size:16px;
+}
+.experience-header h2{
+    
+    text-align: center;
 }
