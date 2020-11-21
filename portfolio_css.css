@@ -194,8 +194,8 @@ max-width: 100%;
     position:absolute;
     z-index: 1;
     font-family: 'Slabo 27px', serif;
-    max-width:80%;
-  top: 2%;
+    width:80%;
+    top: 2%;
     overflow-y: auto;
 }
 .close-resume {
@@ -300,16 +300,17 @@ max-width: 100%;
 }
 
 .education {
-    margin:25px;
+    margin: 25px;
     padding:15px;
-    border:1px solid black;
+    border: 2px solid black;
     border-radius: 5px;
+    font-size: 18px;
 }
 
 .flex-column-change {
     display:flex;
     flex-direction: column;
-    width:65%;
+    width: 75%;
     justify-content:center;
 }
 
@@ -327,15 +328,16 @@ max-width: 100%;
     padding:15px 75px;
     margin-bottom:35px;
     background-color: #cbcbcb;
+    width: 100%;
+    justify-content: flex-end;
 }
 
 
 .experience1, .experience2, .experience3, .experience4 {
-
     border-left:2px solid black;
     padding-left:1%;
     font-size:24px;
-    margin:10px 0;
+    margin:15px 0;
     
 }
 .experience p{
@@ -361,22 +363,26 @@ max-width: 100%;
 }
 .experience-responsive {
     display: flex;
+    /* width:100%; */
+    margin:0% 10%;
 }
 
 .experience-titles {
-    display:flex;
-    flex-direction: column;
-    
-    width:100%;
+    margin:auto;
+    cursor: pointer;
 }
 
 .experience-details {
     display:flex;
     flex-direction: column;
-    border:5px solid black;
+    border:3px solid black;
     padding:25px;
     justify-content: center;
     align-items: center;
+    width:65%;
+    height:auto;
+    margin:auto;
+    
 }
 
 .experience-hover {
@@ -391,3 +397,25 @@ max-width: 100%;
 .exper-common p {
     margin: 10px 0;
 }
+
+.amazon {
+    width:100%;
+}
+
+.art {
+    width:100%;
+}
+
+.neighborhood {
+    width:100%;
+}
+
+.usmc {
+    width:100%;
+}
+
+.work-details p {
+   margin: 7.5px 0;
+}
+
+
