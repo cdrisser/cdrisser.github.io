@@ -103,12 +103,6 @@ h4{
 justify-content: center;
 }
 
-.cactus-icon{
-  width:75px;
-  height:75px;
-  border:none;
-  color:var(--white);
-}
 a
 {
   text-decoration:none;
@@ -169,6 +163,7 @@ h2{
 .project_ss{
   width: 200px;
   height:200px;
+max-width: 100%;
   object-fit: contain;
   border: 3px solid black;
   background-color:black;
@@ -200,6 +195,8 @@ h2{
     z-index: 1;
     font-family: 'Slabo 27px', serif;
     max-width:80%;
+  top: 2%;
+    overflow-y: auto;
 }
 .close-resume {
     width:5%;
@@ -286,7 +283,7 @@ h2{
     flex-direction: column;
     background-color:#DCEDC8;
     height:25%;
-    margin:25px auto;
+    margin:0 auto;
 }
 .navbar {
     margin:15px;
@@ -327,18 +324,22 @@ h2{
 #experience-container {
     display:flex;
     flex-direction: column;
-    padding:0 75px;
+    padding:15px 75px;
+    margin-bottom:35px;
+    background-color: #cbcbcb;
 }
 
 
-.experience {
+.experience1, .experience2, .experience3, .experience4 {
 
     border-left:2px solid black;
     padding-left:1%;
-    flex: 1 0 20%;
+    font-size:24px;
+    margin:10px 0;
+    
 }
 .experience p{
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .experience-wrap {
@@ -365,15 +366,28 @@ h2{
 .experience-titles {
     display:flex;
     flex-direction: column;
-    margin-right:5%;
+    
+    width:100%;
 }
 
 .experience-details {
+    display:flex;
+    flex-direction: column;
     border:5px solid black;
+    padding:25px;
+    justify-content: center;
+    align-items: center;
 }
 
 .experience-hover {
     font-size:12px;
     margin-bottom: 5px;
 
+}
+.detail {
+    font-size: 18px;
+}
+
+.exper-common p {
+    margin: 10px 0;
 }
