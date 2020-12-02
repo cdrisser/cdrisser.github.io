@@ -250,7 +250,7 @@ max-width: 100%;
 .resume-about {
     background-color: #C8E6C9;
     padding:50px;
-    font-size:16px;
+    font-size:20px;
     text-align:center;
 }
 .resumedetails h2 {
@@ -304,7 +304,7 @@ max-width: 100%;
     padding:15px;
     border: 2px solid black;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 18p;
 }
 
 .flex-column-change {
