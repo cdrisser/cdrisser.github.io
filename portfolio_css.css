@@ -99,6 +99,7 @@ padding-bottom: 25px;
   display:flex;
   margin:15px auto;
 justify-content: center;
+    flex-wrap: wrap;
 }
 
 a
@@ -106,7 +107,7 @@ a
   text-decoration:none;
 }
 #contact{
-  background-color:#232323;
+  background-color:black;
 }
 .contact-methods{
   display:flex;
@@ -371,6 +372,7 @@ max-width: 100%;
     /* width:100%; */
     margin:0% 5%;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .experience-titles {
@@ -454,17 +456,28 @@ max-width: 100%;
 .contact-me {
     color:#ffffff;
   font-size:22px;
-  padding:30px;
+  padding: 2px 15px;
 }
 
 #projects p {
     text-align:center;
-    font-size:18px;
+    font-size:26px;
     color:white;
     padding:1%;
 }
 
 .project-ind {
-    
     padding:4px;
+}
+p.tech-used{
+    font-size:18px !important;
+}
+
+
+.contact-header {
+ font-size:30px;
+    color:white;
+    text-align: center;
+    padding-top:15px;
+    padding-bottom: 5px;
 }
