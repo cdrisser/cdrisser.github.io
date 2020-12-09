@@ -299,7 +299,7 @@ max-width: 100%;
     width: 100%;
     flex-direction: column;
     background-color:#DCEDC8;
-    height:25%;
+   
     margin:0 auto;
 }
 .navbar {
@@ -317,11 +317,13 @@ max-width: 100%;
 }
 
 .education {
-    margin: 25px;
+    margin: 25px auto;
     padding:15px;
     border: 2px solid black;
     border-radius: 5px;
     font-size: 18p;
+    width:25%;
+    text-align: center;
 }
 
 .flex-column-change {
@@ -332,11 +334,11 @@ max-width: 100%;
 }
 
 .diploma { 
-    width:100%;
-    max-width:400px;   
+    width:25%;
+    max-width:100%;
     height:auto;
     padding-bottom: 10px;
-    margin:50px
+    margin: auto;
 }
 
 #experience-container {
@@ -438,8 +440,6 @@ max-width: 100%;
    margin: 7.5px 0;
 }
 
-
-
 .projects-line {
     width:10%;
     margin: -15px auto 15px;
@@ -454,6 +454,8 @@ max-width: 100%;
 
 #contact-resume {
     background-color: #edeaea;
+    margin-bottom: 25px;
+    margin-top:-35px
 }
 
 .contact-line {
@@ -489,4 +491,8 @@ p.tech-used{
     text-align: center;
     padding-top:15px;
     padding-bottom: 5px;
+}
+
+.diploma-container {
+    width:100%;
 }
