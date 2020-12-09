@@ -1,4 +1,4 @@
-let timer
+
 $(document).ready(()=>{
     $("#countdown").hide();
   $("button").click(()=>{

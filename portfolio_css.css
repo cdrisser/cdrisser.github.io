@@ -208,7 +208,7 @@ max-width: 100%;
     left:2%;
     z-index: 1;
     font-family: 'Slabo 27px', serif;
-    width:100%;
+    width:95%;
     top: 2%;
     overflow-y: auto;
 }
@@ -274,6 +274,7 @@ max-width: 100%;
     color: black;
 }
 .resume-about h3 {
+    color:black;
   font-weight:500;
   font-size:54px;
   margin:15px;
