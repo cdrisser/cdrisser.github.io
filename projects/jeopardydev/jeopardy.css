@@ -9,10 +9,9 @@ html{
 #main-board{
   display:flex;
   width: 50%;
-justify-content: center;
+  justify-content: center;
   margin: 25px auto ;
-    
-    
+        
 }
 body{
   background-color:black;
@@ -31,7 +30,7 @@ h1, h3, p{
   flex-direction: column;
 }
 button{
-  font-family: Korinna, serif;
+  font-family: inherit;
   color:black;
 }
 
@@ -87,4 +86,17 @@ button{
     margin-bottom: 10px;
     width: 35%;
     margin: auto;
+}
+.home-button{
+    border-radius: 15px;
+    background-color:#efdfc1;
+    
+    height:25px;
+    width:5%;
+    
+    position:absolute;
+    right:2%;
+}
+.home-button a{
+    text-align: center;
 }
