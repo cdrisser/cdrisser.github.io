@@ -51,7 +51,8 @@ color:var(--white);
 }
 #main-section{
   width:100%;
-  background:url("images/succs.jpg");
+  background:linear-gradient(90deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0)),url("images/succs.jpg");
+ 
   background-size:cover;
   height:70vh;
   display:flex;
