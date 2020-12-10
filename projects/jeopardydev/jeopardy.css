@@ -43,9 +43,9 @@ button{
 .buttons {
     display: flex;
     justify-content: center;
-    width: 10%;
     margin: auto;
     margin-bottom: 25px;
+    flex-wrap:wrap;
 }
 
 .column-select {
@@ -90,9 +90,10 @@ button{
     border-radius: 15px;
     background-color:#efdfc1;
     height:4%;
-    width:6%;
+    min-width:6%;
     position:absolute;
     right:2%;
+    margin:2%;
 
 }
 .home-button a{
