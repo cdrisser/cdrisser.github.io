@@ -29,12 +29,12 @@ width:50%;
   color:#c73530;
   font-family: 'Orbitron', sans-serif;
   padding: 15px 0;
-    min-height:20%;
+  min-height:20%;
 
 }
 #display{
 
-  padding: 15px 0;
+  padding: 15px 2px;
   min-height:20%;
   font-size:30px;
   background-color:#65737e;
@@ -54,9 +54,8 @@ width:50%;
 }
 
 .number{
-  flex: 1 0 25%;
-  font-size:18px;
-  padding: 20px 0;
+ width:25%;
+  padding: 5%;
 
 }
 button{
