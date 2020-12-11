@@ -7,18 +7,23 @@ body{
 
 }
 .home-but{
-    color:white;
-    width:15%;
+
+    width:5%;
     position:absolute;
     top:5%;
     right:2%;
-}
+    font-family: 'Orbitron', sans-serif;
+  background-color:#343d46;
+    padding:1%;
+    text-align: center;
+    
 
-.home-but a{
+}
+.home-but div{
     color:white;
     text-decoration: none;
-    
 }
+
 .flexadjust{
     display:flex;
     justify-content: center;
@@ -30,6 +35,7 @@ border: 3px solid black;
 display: flex;
 flex-direction: column;
 width:50%;
+
     
 
 }
@@ -42,13 +48,11 @@ width:50%;
   color:#c73530;
   font-family: 'Orbitron', sans-serif;
   padding: 15px 0;
-  min-height:20%;
+ 
 
 }
 #display{
-
   padding: 15px 2px;
-  min-height:20%;
   font-size:30px;
   background-color:#65737e;
   text-align: right;
@@ -113,3 +117,7 @@ width:100%;
   color: red;
   text-align:center;
 }
+
+
+
+
