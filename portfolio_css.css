@@ -93,9 +93,9 @@ h4{
   font-size:24px;
 }
 #projects{
-    
     background-image:linear-gradient(rgb(34, 34, 34),rgba(35,35,35,1));
 padding-bottom: 25px;
+
 }
 .flex-change2{
   display:flex;
@@ -156,7 +156,7 @@ h2{
 .project-details{
   display:flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;;
   margin:auto;
   flex-wrap: wrap;
 }
@@ -244,7 +244,7 @@ max-width: 100%;
     margin:10px;
     border-radius: 5px;
     font-family: inherit;
-    width:20%;
+    
 }
 
 .resume-icon {
@@ -482,10 +482,16 @@ max-width: 100%;
 }
 
 .project-ind {
-    padding:4px;
+    display: flex; 
+  padding: 0.5em;
+    flex-direction: column;
+    justify-content:;
+    
 }
 p.tech-used{
     font-size:18px !important;
+    
+    margin:auto;
 }
 
 
@@ -512,6 +518,18 @@ p.tech-used{
     font-size:18px;
     }
     .project-ind{
-    margin:25px 0;    
+        width:50%;
+    }
+    
+}
+@media only screen and (max-width: 1600px){
+    .project-ind{
+    width:33%;   
+    }
+}
+@media only screen and (max-width: 464px){
+    .project-ind{
+    margin:25px 0;
+        width:100%;
     }
 }
