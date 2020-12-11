@@ -7,18 +7,17 @@ body{
 
 }
 .flexadjust{
-  display:flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-
-
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
-
 .main-calc{
 border: 3px solid black;
 display: flex;
 flex-direction: column;
+width:50%;
+    
 
 }
 #currentmath{
@@ -51,7 +50,6 @@ flex-direction: column;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height:75%;
 }
 
 .number{
