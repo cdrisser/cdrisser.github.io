@@ -6,6 +6,19 @@ body{
   background-image:radial-gradient(grey,black);
 
 }
+.home-but{
+    color:white;
+    width:15%;
+    position:absolute;
+    top:5%;
+    right:2%;
+}
+
+.home-but a{
+    color:white;
+    text-decoration: none;
+    
+}
 .flexadjust{
     display:flex;
     justify-content: center;
