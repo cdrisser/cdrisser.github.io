@@ -511,4 +511,7 @@ p.tech-used{
     min-width:20%;
     font-size:18px;
     }
+    .project-ind{
+    margin:25px 0;    
+    }
 }
