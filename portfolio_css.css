@@ -93,8 +93,8 @@ h4{
   font-size:24px;
 }
 #projects{
-    background-color:#232323;
- 
+    
+    background-image:linear-gradient(rgb(34, 34, 34),rgba(35,35,35,1));
 padding-bottom: 25px;
 }
 .flex-change2{
