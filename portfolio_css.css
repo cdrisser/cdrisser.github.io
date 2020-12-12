@@ -499,6 +499,7 @@ max-width: 100%;
     background-color:#1c1c1c;
     border-radius: 15px;
     min-height: 100%;
+    min-width:33%;
     
 }
 
@@ -534,9 +535,37 @@ max-width: 100%;
     
     
 }
-@media only screen and (max-width: 1600px){
-    .project-ind{
-    width:33%;   
+@media only screen and (min-width: 900px){
+    .contact-header{
+        font-size:36px;
+    }
+    .contact-me{
+        font-size:24px;;
+    }
+    #projects p{
+        font-size:36px;
+    }
+    .project-ind p:nth-child(3) {
+        font-size:30px !important;
+    }
+    .tech-used{
+        font-size:20px !important;
+    }
+    h2{
+        font-size:36px;
+    }
+    .resume{
+        font-size:24px;
+        width:20%;
+    }
+    h3{
+        font-size:36px;
+    }
+    h1{
+        font-size:72px;
+    }
+    .nav-list li{
+        font-size:24px;
     }
 }
 @media only screen and (max-width: 464px){
