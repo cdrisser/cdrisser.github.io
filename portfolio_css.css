@@ -35,7 +35,7 @@ margin-bottom: 10% !important;
 }
 .nav-list li{
 padding:20px;
-font-size:2.2vw;
+font-size:3vw;
 color:var(--white);
 }
 
@@ -79,14 +79,14 @@ color:black;
 
 h1{
   font-weight:700;
-  font-size:7vw;
+  font-size:8vw;
   margin-top:15px;
   color: var(--white);
   text-align:center;
 }
 h3{
   font-weight:500;
-  font-size:3vw;
+  font-size:4vw;
   margin:15px;
   color: white;
     text-align:center;
@@ -131,7 +131,7 @@ footer{
   background-color: #232323;
 }
 h2{
-  font-size: 3vw;
+  font-size: 5vw;
   padding:20px 0;
   font-weight:500;
   text-align:center;
@@ -180,11 +180,11 @@ max-width: 100%;
     border-radius: 15px;
 }
 .resume{
-	font-size:2vw;
+	font-size:3vw;
 	color:inherit;
 	padding: 10px;
 	border:3px solid black;
-    width:15vw;
+    width:18vw;
     
     margin:auto;
 	margin-top:25px;
@@ -474,13 +474,13 @@ max-width: 100%;
 
 .contact-me {
     color:#ffffff;
-  font-size:1.8vw;
+  font-size:2.5vw;
   padding: 2px 15px;
 }
 
 #projects p {
     text-align:center;
-    font-size:2.5vw;
+    font-size:4vw;
     color:white;
     padding:1%;
 }
@@ -497,24 +497,24 @@ max-width: 100%;
 
 
 .tech-used{
-    font-size:1.6vw !important;
+    font-size:2.6vw !important;
     color: white;
     margin:auto;
      list-style-type: none;
     text-align: center;
 }
 .project-ind p:nth-child(3){
-    font-size: 2vw !important;
+    font-size: 3.2vw !important;
     text-decoration: underline;
 }
 
 
 .contact-header {
- font-size:3vw;
+ font-size:5vw;
     color:white;
     text-align: center;
     padding-top:15px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 .diploma-container {
@@ -534,9 +534,13 @@ max-width: 100%;
     .project-ind{
     margin:25px 0;
         width:80%;
+        
     }
     .tech-used{
         margin:2%
+    }
+    h2{
+        padding-bottom:0;
     }
 }
 
