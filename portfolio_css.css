@@ -488,10 +488,17 @@ max-width: 100%;
     justify-content:;
     
 }
-p.tech-used{
+
+
+.tech-used{
     font-size:18px !important;
-    
+    color: white;
     margin:auto;
+     list-style-type: none;
+}
+.project-ind p:nth-child(3){
+    font-size: 18px !important;
+    text-decoration: underline;
 }
 
 
@@ -534,3 +541,10 @@ p.tech-used{
     }
 }
 
+
+.tech-flexchange {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}

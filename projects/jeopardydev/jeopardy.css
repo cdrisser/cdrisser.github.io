@@ -102,3 +102,15 @@ button{
   color:black;  
     text-decoration: none;
 }
+@media only screen and (max-width: 935px){
+    .square{
+        min-width:100px;
+        min-height: 100px;
+    }
+    .title{
+    font-size:18px;
+}
+    .dollaramt{
+    font-size:36px;
+}
+   
