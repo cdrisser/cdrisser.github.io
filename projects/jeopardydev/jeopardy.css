@@ -54,7 +54,7 @@ button{
     padding:5px 50px;
     height: %;
 }
-#column-fill{
+.column-fill{
     font-family:Korrina,serif;
     font-size: 24px;
     color:#efdfc1;
@@ -118,3 +118,16 @@ button{
             margin-top: 15%;
         }
     }   
+    @media only screen and (max-width:690px){
+        #main-board, .buttons, .column-fill{
+            display: none;
+        } 
+        .show-landscape-message{
+            display: block;
+        }
+    }
+     @media only screen and (min-width:691px){
+        .show-landscape-message{
+            display: none !important;
+        }
+    }
