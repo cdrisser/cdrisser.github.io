@@ -50,14 +50,15 @@ button{
 
 .column-select {
     border-radius: 15px;
-    background-color:#efdfc1;
+    background-color:#e9be75;
     padding:5px 50px;
-    height: %;
+    font-size:18px;
+    font-weight: 500;
 }
 .column-fill{
     font-family:Korrina,serif;
-    font-size: 24px;
-    color:#efdfc1;
+    font-size: 33px;
+    color:#e9be75;
 }
 .square{
     font-family: helvetica;
