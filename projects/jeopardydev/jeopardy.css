@@ -113,7 +113,7 @@ button{
     .dollaramt{
     font-size:36px;
 }
-    @media only screen and (max-width: 935px){
+    @media only screen and (max-width: 500px){
         .jeopardy-logo {
             margin-top: 15%;
         }
