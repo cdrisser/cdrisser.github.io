@@ -102,6 +102,12 @@ button{
   color:black;  
     text-decoration: none;
 }
+.yellow-arrow{
+    width:50%;
+    --animate-duration: 4s;
+    margin:auto;
+    display:block;
+}
 @media only screen and (max-width: 935px){
     .square{
         min-width:100px;
@@ -124,6 +130,7 @@ button{
         } 
         .show-landscape-message{
             display: block;
+            width:100%;
         }
     }
      @media only screen and (min-width:691px){
@@ -131,3 +138,8 @@ button{
             display: none !important;
         }
     }
+.landscape-msg {
+    font-family:Korrina,serif;
+    font-size: 24px;
+    color:#efdfc1;
+}
