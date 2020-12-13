@@ -73,7 +73,8 @@ width:50%;
 .number{
  width:25%;
   padding: 5%;
-
+border:none;
+    background-image:radial-gradient(grey,black);
 }
 button{
   font-family: 'Orbitron', sans-serif;
@@ -84,13 +85,13 @@ font-size:18px;
 .number:hover{
   transform:scale(1.1);
   background-color:#65737e;
-  
+  border: 2px solid black;
   color:black;
 }
 #resetbut:hover{
   transform:scale(1.1);
   background-color:#e6241e;
-  
+  border: 2px solid black;
   color:black;
 }
 
