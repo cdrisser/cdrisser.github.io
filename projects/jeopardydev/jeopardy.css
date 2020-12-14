@@ -93,18 +93,22 @@ button{
 }
 .home-button{
     border-radius: 15px;
-    background-color:#efdfc1;
-    height:4%;
-    min-width:6%;
+    background-color:#e9be75;
+    padding:5px 30px;
+    font-size:18px;
+    font-weight: 500;
     position:absolute;
-    margin:2%;
-    top: 1%;
+    
+        
+    
 
 }
 .home-button a{
   font-family: inherit;
   color:black;  
     text-decoration: none;
+    margin:auto;
+    
 }
 .yellow-arrow{
     width:50%;
@@ -122,6 +126,7 @@ button{
 }
     .dollaramt{
     font-size:36px;
+}
 }
     @media only screen and (max-width: 500px){
         .jeopardy-logo {

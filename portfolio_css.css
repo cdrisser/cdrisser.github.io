@@ -31,7 +31,7 @@ html {
 }
 
 .nav-list li{
-    padding:20px;
+    margin: 20px;
     font-size:3vw;
     color:var(--white);
 }
@@ -42,9 +42,8 @@ html {
     color:var(--white);
 }
 .nav-list li:hover{
-  background-color:black;
-  border-radius:15px;
-  border: 1px solid white;
+  
+  border-bottom: 2px solid white;
 }
 
 
