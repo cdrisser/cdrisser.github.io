@@ -1,7 +1,7 @@
 
 $(document).ready(()=>{
     $("#countdown").hide();
-  $("button").click(()=>{
+  $(".column-select").click(()=>{
 //remove column in case it middle of Game
 $('.col').remove();
 //send number of column requested to function to dynamicaly load
