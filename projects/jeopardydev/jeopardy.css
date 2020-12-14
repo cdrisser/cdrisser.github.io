@@ -5,6 +5,7 @@ html{
     cursor: pointer;
     
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }

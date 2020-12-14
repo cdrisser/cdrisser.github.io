@@ -13,7 +13,7 @@ $(".close-resume").click(()=>{
         $(".resumedetails").hide();
         $(".resumedetails").removeClass("animate__animated animate__hinge animate__slower");
         $(".resumedetails").removeClass("animate__animated animate__fadeInBottomLeft");
-    },1500);
+    },3000);
     
     $(".resume").show();
     
