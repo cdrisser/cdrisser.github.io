@@ -32,6 +32,7 @@ html {
 
 .nav-list li{
     margin: 20px;
+    padding:5px;
     font-size:3vw;
     color:var(--white);
 }
