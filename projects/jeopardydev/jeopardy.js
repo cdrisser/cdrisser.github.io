@@ -2,17 +2,16 @@
 $(document).ready(()=>{
     $("#countdown").hide();
   $(".column-select").click(()=>{
-//remove column in case it middle of Game
-$('.col').remove();
-//send number of column requested to function to dynamicaly load
-  addCols(Number($(document.activeElement).val()));
-  //hides board while data loads from api
-  $('#main-board').hide();
-    
-
   });
 });
-
+function recieveNumOfCols(num){
+    //remove column in case it middle of Game
+$('.col').remove();
+//send number of column requested to function to dynamicaly load
+  addCols(Number(num));
+  //hides board while data loads from api
+  $('#main-board').hide();
+}
 async function fetchQandAs(id,i){
   const fetchstr = `https://jservice.io/api/clues?category=${id}`
   console.log(fetchstr);
