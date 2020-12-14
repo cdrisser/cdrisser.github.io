@@ -99,10 +99,6 @@ button{
     font-size:18px;
     font-weight: 500;
     position:absolute;
-    
-        
-    
-
 }
 .home-button a{
   font-family: inherit;
@@ -116,6 +112,17 @@ button{
     --animate-duration: 4s;
     margin:15% auto;
     display:block;
+}
+.too-small-message{
+    display: none;
+    font-family:Korrina,serif;
+    font-size: 33px;
+    color:#e9be75;
+}
+.landscape-msg {
+    font-family:Korrina,serif;
+    font-size: 33px;
+    color:#e9be75;
 }
 @media only screen and (max-width: 935px){
     .square{
@@ -142,14 +149,21 @@ button{
             display: block;
             width:100%;
         }
+        .jeopardy-logo {
+            padding-top:10%;
+        }
     }
      @media only screen and (min-width:691px){
         .show-landscape-message{
             display: none !important;
         }
     }
-.landscape-msg {
-    font-family:Korrina,serif;
-    font-size: 33px;
-    color:#e9be75;
-}
+    @media only screen and (max-width:640px){
+        .too-small-message{
+            display: block;
+        }
+        #main-board, .buttons, .column-fill, .show-landscape-message{
+            display: none;
+        } 
+    }
+
