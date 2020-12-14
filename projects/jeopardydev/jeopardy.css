@@ -34,6 +34,7 @@ h1, h3, p{
 button{
   font-family: inherit;
   color:black;
+    cursor: pointer;
 }
 
 .jeopardy-logo {
