@@ -13,6 +13,9 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
+body{
+    height:100vh;
+}
 
 #nav-header{
   position:fixed;
@@ -154,9 +157,10 @@ h2{
 .project-details{
   display:flex;
   justify-content: space-around;
-  align-items: flex-start;;
+  align-items: flex-start;
   margin:auto;
   flex-wrap: wrap;
+    
 }
 .project_ind{
   margin:15px;
@@ -588,8 +592,12 @@ max-width: 100%;
         padding:100px 10%;
     }
 }
-
-
+@media only screen and (min-width:1400px){
+.project-details{
+    
+    padding: 0 15%; 
+}
+}
 
 .tech-flexchange {
     display:flex;
