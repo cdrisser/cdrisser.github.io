@@ -25,7 +25,7 @@ function loadQuestions(answers,colnum){
   for(let i = 0;i<answers.length; i++){
      $(`#category${colnum}-${i}`).click(()=>{
          //adjust font from dollar sign font to reflect correct game board
-         $(`#category${colnum}-${i}`).css("font-size","14px");
+         $(`#category${colnum}-${i}`).css("font-size","2vmin");
          $(`#category${colnum}-${i}`).css("color","white");
          $(`#category${colnum}-${i}`).css("transform","scale(1.5)");
 
