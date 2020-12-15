@@ -4,6 +4,7 @@ html{
 body{
   box-sizing: border-box;
   background-image:radial-gradient(grey,black);
+    height:100vh;
 
 }
 .home-but{
@@ -28,15 +29,14 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height:100vh;
 }
 .main-calc{
 border: 3px solid black;
 display: flex;
 flex-direction: column;
-width:50%;
-
-    
+width:85%;
+    height:70vh;
 
 }
 #currentmath{
@@ -48,6 +48,7 @@ width:50%;
   color:#c73530;
   font-family: 'Orbitron', sans-serif;
   padding: 15px 0;
+    height:10%;
  
 
 }
@@ -59,11 +60,12 @@ width:50%;
   color: white;
   font-family: 'Orbitron', sans-serif;
   vertical-align: bottom;
-
+    height:10;
 }
 
 #grid{
     width: 100%;
+    height:80%;
   border-top: 3px solid black;
   display: flex;
   flex-direction: row;
@@ -72,6 +74,7 @@ width:50%;
 
 .number{
  width:25%;
+    height:25%;
   padding: 5%;
 
 }
@@ -95,11 +98,6 @@ font-size:18px;
 }
 
 
-#butdiv{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 .resetdiv{
 width:100%;
 }
@@ -108,16 +106,11 @@ width:100%;
   padding:5px;
   background-color:#c73530;
 }
-#reset-dialog{
-  margin-top:5%;
-  color: red;
-  text-align:center;
-}
-#warning-dialog{
-  color: red;
-  text-align:center;
-}
 
 .diffbackground {
     background-color:#2871ba;
+}
+
+.math-display {
+    height:25%;
 }
