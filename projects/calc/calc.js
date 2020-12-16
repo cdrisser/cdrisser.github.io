@@ -37,6 +37,13 @@ function action(input){
       displaystr = '';
       console.log(document.getElementById('display').innerHTML);
 }
+    else{
+        setTimeout(()=>{
+            document.getElementById('display').innerHTML = "";
+            displaystr="";
+        },2000);
+        document.getElementById('display').innerHTML = "The input is not valid";
+    }
 }
 
 function reset(input){
@@ -100,6 +107,7 @@ else{
   total =0;
   resetCalc = true;
 }
+    
 }
 
 }
