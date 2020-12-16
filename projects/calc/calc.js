@@ -28,7 +28,7 @@ function action(input){
   if(displaystr=="" && calcArr.length<1){
     return;
   }
-
+    //check and see if input is valid so far.  If so store the input thus far.
     if(!isNaN(Number(document.getElementById('display').innerHTML))){
       addToArr(input);
       let storeDisplayStr = document.getElementById('currentmath').innerHTML;
@@ -37,6 +37,7 @@ function action(input){
       displaystr = '';
       console.log(document.getElementById('display').innerHTML);
 }
+    //send error message on invalid input
     else{
         setTimeout(()=>{
             document.getElementById('display').innerHTML = "";
