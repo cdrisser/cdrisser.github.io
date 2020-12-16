@@ -34,7 +34,7 @@ body{
 border: 3px solid black;
 display: flex;
 flex-direction: column;
-width:85%;
+width:75%;
     height:80vh;
 
 }

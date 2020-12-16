@@ -95,7 +95,7 @@ h4{
 #projects{
     background-image:linear-gradient(rgb(34, 34, 34),rgba(35,35,35,1));
 padding-bottom: 25px;
-    height:100%;
+    
 
 }
 .flex-change2{
@@ -111,7 +111,8 @@ a
 }
 #contact{
   background: linear-gradient(#232323 20%,black);
-    padding: 15px 0 40px;;
+    padding: 15px 0 40px;
+    
 }
 .contact-methods{
   display:flex;
@@ -160,6 +161,7 @@ h2{
   align-items: flex-start;
   margin:auto;
   flex-wrap: wrap;
+    margin-bottom:50px;
     
 }
 .project_ind{
