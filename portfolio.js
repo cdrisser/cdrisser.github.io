@@ -8,12 +8,12 @@ $(".neighborhood").hide();
         $(".resumedetails").show().addClass("animate__animated animate__fadeInBottomLeft")
 	});
 $(".close-resume").click(()=>{
-    $(".resumedetails").addClass("animate__animated animate__hinge animate__slower");
-    setTimeout(()=>{
+    
+
         $(".resumedetails").hide();
-        $(".resumedetails").removeClass("animate__animated animate__hinge animate__slower");
+        
         $(".resumedetails").removeClass("animate__animated animate__fadeInBottomLeft");
-    },3000);
+    
     
     $(".resume").show();
     
