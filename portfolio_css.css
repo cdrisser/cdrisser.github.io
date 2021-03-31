@@ -28,7 +28,7 @@ body{
 
 .nav-list{
   list-style: none;
-  background:linear-gradient(black 10%,#373737);
+  background:black;
   display:flex;
   justify-content: center;
 
@@ -93,7 +93,7 @@ h4{
   font-size:24px;
 }
 #projects{
-    background-image:linear-gradient(rgb(34, 34, 34),rgba(35,35,35,1));
+    background-image:black;
 padding-bottom: 25px;
     
 
@@ -110,8 +110,7 @@ a
   text-decoration:none;
 }
 #contact{
-  background: linear-gradient(#232323 20%,black);
-    padding: 15px 0 40px;
+  background: black
     
 }
 .contact-methods{
@@ -179,18 +178,17 @@ max-width: 100%;
     border: 2px solid #232323;
     border-radius: 15px;
 }
-.resume{
-	font-size:3vw;
-	color:inherit;
-	padding: 10px;
-	border:3px solid black;
-    width:18vw;
-    
-    margin:auto;
-	margin-top:25px;
-	border-radius: 15px;
-	background-color: var(--white);
-	display:block;
+.resume {
+    font-size: 3vw;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    width: 18vw;
+    margin: auto;
+    margin-top: 25px;
+    border-radius: 15px;
+    background-color: transparent;
+    display: block;
     text-align: center;
 }
 .resume:hover{
@@ -482,7 +480,7 @@ max-width: 100%;
 
 .contact-me {
     color:#ffffff;
-  font-size:2.5vw;
+  font-size:4vw;
   padding: 2px 15px;
 }
 
@@ -503,7 +501,6 @@ max-width: 100%;
     min-width:33%;
     
 }
-
 
 .tech-used{
     font-size:2.6vw !important;
@@ -529,6 +526,20 @@ max-width: 100%;
 .diploma-container {
     width:100%;
 }
+
+.tech-flexchange {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.flex-change3{
+  display:flex;
+justify-content: center;
+    align-items: center;
+    
+}
+
 @media only screen and (max-width: 1001px){
     .diploma{
         width:60%;
@@ -540,9 +551,7 @@ max-width: 100%;
     .contact-header{
         font-size:36px;
     }
-    .contact-me{
-        font-size:24px;;
-    }
+    
     #projects p{
         font-size:36px;
     }
@@ -571,7 +580,7 @@ max-width: 100%;
 }
 @media only screen and (max-width: 464px){
     .project-ind{
-    margin:25px 0;
+        margin:25px 0;
         width:80%;
         
     }
@@ -595,21 +604,13 @@ max-width: 100%;
     }
 }
 @media only screen and (min-width:1400px){
-.project-details{
-    
+    .project-details{
     padding: 0 15%; 
 }
+    .contact-me {
+    font-size:3vw;
 }
 
-.tech-flexchange {
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-.flex-change3{
-  display:flex;
-justify-content: center;
-    align-items: center;
     
 }
+
