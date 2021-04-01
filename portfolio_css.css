@@ -94,7 +94,7 @@ h4{
 }
 #projects{
     background-image:black;
-padding-bottom: 25px;
+
     
 
 }
@@ -110,8 +110,8 @@ a
   text-decoration:none;
 }
 #contact{
-  background: black
-    
+  background: black;
+  height:75px;
 }
 .contact-methods{
   display:flex;
