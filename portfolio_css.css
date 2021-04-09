@@ -117,8 +117,8 @@ a
   display:flex;
   justify-content:center;
   align-items:center;
-flex-wrap: wrap;
-
+  flex-wrap: wrap;
+  margin: 1rem;
 }
 .horiz-line{
   border: 2px solid var(--white);
