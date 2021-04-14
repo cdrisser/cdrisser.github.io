@@ -614,3 +614,7 @@ justify-content: center;
 
 
 
+
+.acmp-proj {
+    object-fit: cover;
+}
