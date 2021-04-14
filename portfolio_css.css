@@ -156,7 +156,7 @@ h2{
 }
 .project-details{
   display:flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
   margin:auto;
   flex-wrap: wrap;
@@ -164,7 +164,6 @@ h2{
     
 }
 .project_ind{
-  margin:15px;
   padding:50px;
   
 }
@@ -480,8 +479,8 @@ max-width: 100%;
 
 .contact-me {
     color:#ffffff;
-  font-size:4vw;
-  padding: 2px 15px;
+    font-size: 2.5vw;
+    padding: 2px 15px;
 }
 
 #projects p {
@@ -498,7 +497,8 @@ max-width: 100%;
     background-color:#1c1c1c;
     border-radius: 15px;
     min-height: 100%;
-    min-width:33%;
+    min-width:28rem;
+    margin:.25rem;
     
 }
 
@@ -604,13 +604,13 @@ justify-content: center;
     }
 }
 @media only screen and (min-width:1400px){
-    .project-details{
-    padding: 0 15%; 
-}
+   
     .contact-me {
-    font-size:3vw;
+    font-size: 2.5vw;
 }
 
     
 }
+
+
 
