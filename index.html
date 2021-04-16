@@ -7,8 +7,9 @@
     <!-- icon kit -->
     <script src="https://kit.fontawesome.com/ab70dfc5e6.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type = "text/javascript" src = "portfolio.js"></script>
-      <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href="portfolio_css.css">
     <link
@@ -25,146 +26,50 @@
   </head>
   <body>
     <nav id = "nav-header">
-      <ul class = "nav-list">
-        <li><a href="#main-section" class="nav-items">About</a></li>
-        <li><a href="#projects" class="nav-items">Projects</a></li>
-        <li><a href="#contact" class="nav-items">Contact</a></li>
+    <div id="logo-container">
+    <a href="index.html"><img src="./images/cr-logo.png" class="cr-logo">
+        </a>
+    </div>
+      
+      <ul id = "nav-list">
+          <div>
+          </div>
+          <div class = "nav-link-group">
+        <li onclick="scrollToSection('projects')" class="nav-items">Projects</li>
+        <li onclick="scrollToSection('skills')" class="nav-items">Skills</li>
+        <a href="./resume.pdf" target="_blank" rel="noopener noreferrer" class = "resume">Resume</a>
+        </div>
       </ul>
     </nav>
+      <div class = "sticky-contact-methods">
+        <div class = "contact-methods">
+        <div class ="contact-methods-bar"></div>
+      
+      <a class = "contact-me" href="https://www.linkedin.com/in/chrisrisser/" target="_blank"><i class="fab fa-linkedin icon-space"></i></a>
+      <a class = "contact-me" href="mailto:cdrisser@gmail.com"><i class="fas fa-at icon-space"></i></a>
+      <a class = "contact-me" href="http://www.github.com/cdrisser" target="_blank"><i class="fab fa-github icon-space" ></i></a>      
+        <div class ="contact-methods-bar"></div>
+            </div>
+        
+    </div>
+        <div class = "sticky-contact-email">
+        
+        <div class = "contact-methods">
+        <div class ="contact-methods-bar-email"></div>
+        <a class = contact-bar-email href="mailto:cdrisser@gmail.com">cdrisser@gmail</a>
+        <div class ="contact-methods-bar-email email2"></div>
+        </div>
+        
+    </div>
+      <hr class='top-blue-line'>
   <section id="main-section">
     <img src="images/profile-pic.jpg" id ="profile-img" alt="profile pic">
     <h1>Chris Risser</h1>
     <div >
       <h3>Software Engineer living in Phoenix</h3>
-        <a href="#" class = "resume">Resume</a>
-        <div class = "contact-methods">
-      <a class = "contact-me" href="http://www.github.com/cdrisser" target="_blank"><i class="fab fa-github icon-space" ></i></a>
-      <a class = "contact-me" href="https://www.linkedin.com/in/chrisrisser/" target="_blank"><i class="fab fa-linkedin icon-space"></i></a>
-      <a class = "contact-me" href="mailto:cdrisser@gmail.com"><i class="fas fa-at icon-space"></i></a>
-    </div>
-    </div>
-    <div class = "flex-change">
-    <div class = "resumedetails">
-        <div class = "close-background">
-            <div class = "header-details">
-                <a class = "navbar" href ="#skills-container">Skills</a>
-                <a class = "navbar" href ="#education-container">Education</a>
-                <a class = "navbar" href ="#experience-container">Experience</a>
-            </div>
-        <button class = "close-resume">X</button>
-        </div>
-        <div class = "resume-about">
-            <h3>Chris Risser</h3>
-            <p>An initiative-taking, hardworking analytical Software Engineer excelling in object-oriented software.</p>
-        </div>
-        <h2>Skills</h2>
-        <hr class = "header-seperator">
-        <div id = "skills-container">
-        <div class = "skills">
-            <ion-icon class = "resume-icon" name="desktop-outline"></ion-icon>
-            <h4>Front End</h4>
-            <hr class = "skills-seperator">
-            <p>Bootstrap</p>
-            <p>JQuery</p>
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>JavaScript</p>
-            </div>
-        <div class = "skills ">
-            <ion-icon class = "resume-icon" name="server-outline"></ion-icon>
-            <h4>Back End</h4>
-            <hr class = "skills-seperator">
-            <p>Node.js</p>
-            <p>Express</p>
-            <p>Rest API</p>
-            </div>
-        <div class = "skills">
-            <ion-icon class = "resume-icon" name="library-outline"></ion-icon>
-            <h4>The Rest</h4>
-            <hr class = "skills-seperator">
-            <p>Java</p>
-            <p>SQL</p>
-            <p>MVC</p>
-            <p>GIT</p>
-            </div>
-        </div>
-        <div id = "education-container">
-            
-            <h2>Education</h2>
-            <hr class = "header-seperator">
-            
-            <div class = "flex-change3">
-            <img class = "diploma" src = "images/diploma.jpg">
-            
-            <div class = "flex-column-change2">
-            <div class = "education">
-            
-                <p>Bachelor of Science Software Engineering 3.7 GPA</p>
-            </div>
-            <div class = "education">
-                                
-                <p>Master of Business Admin 3.8 GPA</p>
-            </div>
-            <div class = "education">
-            
-                <p>Bachelor of Arts Sociology 3.6 GPA</p>
-            </div>
-                </div>
-            </div>
-        
-        
-            </div>
-        <div id = "experience-container">
-                <h2>Experience</h2>
-                <hr class = "header-seperator">
-                
-                <div class = "experience-responsive">
-                
-                <div class = "experience-titles">
-                    <p class = "experience-hover">**hover for details</p>
-                    <div class = "experience1">
-                        <p>Amazon  </p>
-                        <p class = "small detail">Delivery Driver</p>
-                        <p></p>
-                    </div>
-                    <div class = "experience2">
-                        <p>The Art Institute  </p>
-                        <p class = "small detail">Director</p>
-                        
-                    </div>
-                    <div class = "experience3">
-                        <p>A Neighborhood Mgmt Group  </p>
-                        <p class = "small detail">Asst. Manager</p>
-                        
-                    </div>
-                    <div class = "experience4">
-                        <p>United States Marine Corps  </p>
-                        <p class = "small detail">Aviation Ordnance Technician</p>
-                        
-                    </div>
-                </div>
-               
-                <div class = "experience-details">
-                    <div class = "work-details">
-                        <p> &#8226;<Strong> Quality Assurance Safety Officer and Collateral Duty Inspector </Strong>- ensured aircraft ordnance was safe for flight through detail orientation and final maintenance inspector to verify overall flight safety</p><p> &#8226;<Strong> Technician</Strong>- fixed weapon systems by using technical manuals and schematics under tight maintenance schedules to ensure aircraft were prepared for combat under highly stressful situations</p><p>&#8226;<Strong> Work Center Supervisor</Strong>- managed 30 Marines and prioritized maintenance schedule. Trained and evaluated staff, providing appropriate feedback regarding performance and training requirements. Identified unit objectives, organized needed resources and directed operational efforts to achieve desired results</p>
-                    </div>
-                </div>
-            </div>
-
-        
-        </div>
-<section id = "contact-resume">
-    <div class = "contact-methods">
-      <a class = "contact-me-resume" href="http://www.github.com/cdrisser" target="_blank"><i class="fab fa-github icon-space" ></i></a>
-      <a class = "contact-me-resume" href="https://www.linkedin.com/in/chrisrisser/" target="_blank"><i class="fab fa-linkedin icon-space"></i></a>
-      <a class = "contact-me-resume" href="mailto:cdrisser@gmail.com"><i class="fas fa-at icon-space"></i></a>
-    </div>
-  </section>
-    </div>
-    
+        <a href="mailto:cdrisser@gmail.com" class = "email-but">Hit me up</a>
     
     </div>
-
 </section>
   <section id = "projects">
     <h2>Projects</h2>
@@ -174,9 +79,8 @@
        <div><a href="projects/calc/calculator.html" class = "proj-title"><img src = "images/project_pics/calc.png" alt = "project screenshot" class ="project_ss">
          </a></div>
           <p>Calculator</p>
-          <p>Technology Stack</p>
+          <hr>
           <div class = tech-flexchange>
-              
             <ul class = "tech-used">
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -190,7 +94,7 @@
         <div><a href="projects/jeopardydev/index.html" class = "proj-title"><img src = "images/project_pics/jeopardy_ss.png" alt = "project screenshot" class ="project_ss">
         </a></div>
           <p>Jeopardy</p>
-          <p>Technology Stack</p>
+          <hr>
           <div class = tech-flexchange>
               
             <ul class = "tech-used">
@@ -206,10 +110,10 @@
         </div>
       </div>
         <div class = project-ind>
-        <div><a href="https://acmp-290b2.web.app/" target="_blank" class = "proj-title"><img src = "images/project_pics/ACMP%20SNIP.PNG" alt = "project screenshot" class ="project_ss">
+        <div><a href="https://acmp-290b2.web.app/" target="_blank" class = "proj-title"><img src = "images/project_pics/ACMP%20SNIP.PNG" alt = "project screenshot" class ="project_ss acmp-proj">
         </a></div>
           <p>ACMP Web Application</p>
-          <p>Technology Stack</p>
+            <hr>
           <div class = tech-flexchange>
               
             <ul class = "tech-used">
@@ -232,15 +136,156 @@
 
     </div>
   </section>
-  <section id = "contact">
-    
+      <h2>Skills</h2>
+  <section id= "skills">
       
+      <div class = "skills-container">
+          <div class ="skills-ind">
+              <i class="fab fa-html5"></i>
+              <h3>HTML</h3>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="grey-circle"></span>
+              
+          </div>
+        <div class ="skills-ind">
+            <i class="fab fa-css3-alt"></i>
+              <h3>CSS</h3>
+            <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="grey-circle"></span>
+              
+              
+          </div>
+           <div class ="skills-ind">
+               <i class="fab fa-js"></i>
+              <h3>JAVASCRIPT</h3>
+               <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              
+              
+          </div>
+            <div class ="skills-ind">
+            <i class="fab fa-java"></i>
+              <h3>JAVA</h3>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              
+              
+          </div>
+          <div class ="skills-ind">
+              <i class="fab fa-bootstrap"></i>
+              <h3>BOOTSTRAP</h3>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+               <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              
+          </div>
+         
+      
+      </div>
+       <div class = "skills-container">
+            <div class ="skills-ind">
+            <i class="fas fa-code-branch"></i>
+              <h3>JQUERY</h3>
+             <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+               <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              
+              
+          </div>
+            <div class ="skills-ind">
+            <i class="fab fa-react"></i>
+              <h3>React</h3>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+               <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              
+          </div>
+            <div class ="skills-ind">
+            <i class="fab fa-node-js"></i>
+              <h3>Node-Express</h3>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+               <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              
+                
+              
+          </div>
+          <div class ="skills-ind">
+            <i class="fas fa-server"></i>
+              <h3>MongoDB</h3>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+              <span class="aqua-circle"></span>
+               <span class="grey-circle"></span>
+              <span class="grey-circle"></span>
+              
+          </div>
+          </div>
+    
+</section>
+<section id = "contact">
     
   </section>
 
-
-
       
   </body>
+    <script type = "text/javascript" src = "portfolio.js"></script>
+
   
 </html>
