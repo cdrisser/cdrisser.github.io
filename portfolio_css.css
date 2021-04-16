@@ -76,12 +76,7 @@ body{
 
 #main-section{
   width:100%;
-  display:flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items:flex-start;
-  padding: 10% 20%;
-  height: 85vh;
+height: 85vh;
 }
 #main-section a{
     display: block;
@@ -91,20 +86,20 @@ body{
   max-width:100%;
   height:auto;
   border-radius: 15px;
-  width: 125px;
-  height: 125px;
+  min-width: 125px;
+  min-height: 125px;
   /* border: 5px solid #747474; */
 }
 
 h1{
   margin-top:15px;
-  font-size:64px;
+  font-size: clamp(40px, 8vw, 80px);
   font-weight: 400;
   color: #d9d9d9;
 }
 h3{
   MARGIN-TOP: 15px;
-  font-size:36px;
+  font-size: clamp(32px,6vw,60px);
   font-weight:lighter;
   color: #d9d9d9;
 }
@@ -118,7 +113,7 @@ h4{
 }
 .fab, .fas{
    margin:25px 0;
-    font-size:36px;
+   font-size:36px;
 }
 
 .flex-change2{
@@ -198,10 +193,9 @@ h2{
   display:flex;
   justify-content: center;
   align-items: flex-start;
-  margin:auto;
+  margin: 0 5rem;
   flex-wrap: wrap;
-    margin-bottom:50px;
-    
+  margin-bottom:50px;
 }
 .project_ind{
   padding:50px;
@@ -531,7 +525,8 @@ max-width: 100%;
     /* background-color: #1c1c1c; */
     border-radius: 15px;
     min-height: 100%;
-    min-width:28rem;
+    width: 100%;
+    max-width: 28rem;
     margin:.25rem;
     border: 3px solid #335b7d;
 }
@@ -607,31 +602,7 @@ justify-content: center;
         font-size: 18px;
     }
 }
-@media only screen and (max-width: 464px){
-    .project-ind{
-        margin:25px 0;
-        width:80%;
-        
-    }
-    .tech-used{
-        margin:2%
-    }
-    h2{
-        padding-bottom:0;
-    }
-    .experience-details{
-        margin-top:5%;
-    }
-    .resumedetails h2{
-        padding-bottom: 4%;
-    }
-    .flex-change3{
-        flex-wrap: wrap;
-    }
-    #main-section{
-        padding:100px 10%;
-    }
-}
+
 
 .acmp-proj {
     object-fit: cover;
@@ -642,19 +613,20 @@ hr{
     border: 1px solid #335b7d;
 }
 #skills{
-   padding:0 1rem 1rem;
+   /* padding:0 1rem 1rem; */
    /* background-color:#1c1c1c; */
    display:flex;
    justify-content: center;
    flex-wrap: wrap;
+   margin: 0 4rem;
 }
 .skills-container{
     display:flex;
     flex-direction: column;
     margin: 1rem;
     flex-wrap: wrap;
-    width: fit-content;
-    /* width:45%; */
+    width: 70;
+    FONT-WEIGHT: 500;
 }
 .coding-illustrator{
     margin:1rem;
@@ -666,7 +638,7 @@ hr{
     justify-content: flex-end;
     align-items:center;
     border: 1px solid #747474;
-    padding-left:1rem;
+    /* padding-left:1rem; */
 }
 .skills-ind h3{
     font-size:18px;
@@ -677,15 +649,15 @@ hr{
 .grey-circle {
     background-color: grey;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: .25rem;
 }
 .aqua-circle {
     background-color: #335b7d;
     border-radius: 50%;
-    width: 25px;
-    height: 25px;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-right: .25rem;
 }
 .sticky-contact-email {
@@ -722,7 +694,7 @@ hr{
 .cr-logo {
     position:fixed;
     top:15px;
-    left:30px;
+    left: 15px;
     width:50px;
     height:50px;
     border: 2px solid #335b7d;
@@ -730,4 +702,39 @@ hr{
 }
 
 
+.main-section_profile_details {
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 10rem 5rem 15rem 8rem;
+}
 
+@media only screen and (max-width: 471px){
+    .project-ind{
+        margin:25px 0;
+    }
+    .main-section_profile_details{
+        margin: 8rem 35rem 15rem 10rem;
+    }
+    #main-section{
+        height: 75vh;
+    }
+}
+@media only screen and (max-width: 585px){
+    .fab, .fas{
+        font-size:24px;
+        margin-left:5px;
+    }
+    .skills-ind h3{
+        font-size:14px;
+    }
+    .aqua-circle{
+        width:1rem;
+        height:1rem;
+    }
+    .grey-circle{
+        width:1rem;
+        height:1rem;
+    }
+}
