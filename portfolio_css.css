@@ -22,7 +22,7 @@ body{
 }
 
 #nav-header{
-  position: absolute;
+  position: fixed;
   top:0;
   left:0;
   width:100%;
@@ -739,10 +739,10 @@ hr{
         height: 75vh;
     }
     .sticky-contact-email{
-        right: -2vw;
+       display: none;
     }
     .sticky-contact-methods{
-        left:-2vw;
+        display:none;
     }
     .icon-space{
         margin-left:0;
