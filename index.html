@@ -25,12 +25,8 @@
     <link rel="manifest" href="icons/site.webmanifest">
   </head>
   <body>
+    <div id="overlay"></div>
     <nav id = "nav-header">
-    <div id="logo-container">
-    <a href="index.html"><img src="./images/cr-logo.png" class="cr-logo" width="50" height="50">
-        </a>
-    </div>
-      
       <ul id = "nav-list">
           <div>
           </div>
@@ -41,6 +37,27 @@
         </div>
       </ul>
     </nav>
+      <div class = "hamburger-button" onclick="openSideDrawer()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class = "sidedrawer-close" onClick ="closeSideDrawer()">
+          <span class="span1">X</span>
+          
+          </div>
+      <div id="sidedrawer">
+          <div class = "nav-link-group">
+        <li onclick="scrollToSection('projects')" class="nav-items">Projects</li>
+        <li onclick="scrollToSection('skills')" class="nav-items">Skills</li>
+        <a href="./resume.pdf" target="_blank" rel="noopener noreferrer" class = "resume">Resume</a>
+        </div>
+      </div>
+      
+      <div id="logo-container">
+    <a href="index.html"><img src="./images/cr-logo.png" class="cr-logo" >
+        </a>
+    </div>
       <div class = "sticky-contact-methods">
         <div class = "contact-methods">
         <div class ="contact-methods-bar"></div>

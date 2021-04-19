@@ -1,31 +1,47 @@
+const closeEle= document.querySelector('.sidedrawer-close');
+const ele =  document.getElementById('sidedrawer');
+const hamBut = document.querySelector('.hamburger-button');
 
-var $animation_elements = $('.animation-element');
-var $window = $(window);
-
-function check_if_in_view() {
-  var window_height = $window.height();
-  var window_top_position = $window.scrollTop();
-  var window_bottom_position = (window_top_position + window_height);
- 
-  $.each($animation_elements, function() {
-      
-    var $element = $(this);
-    var element_height = $element.outerHeight();
-    var element_top_position = $element.offset().top;
-    console.log(this.classList);
-    var element_bottom_position = (element_top_position + element_height);
- 
-    //check to see if this current container is within viewport
-    if (element_top_position <= window_bottom_position) {
-      $element.addClass('animate__animated animate__slideInUp');
-    } else {
-      $element.removeClass('animate__animated animate__slideInUp');
-    }
-  });
+const openSideDrawer = ()=>{
+    
+    document.querySelector('#overlay').style.display = 'block';
+    
+    hamBut.classList.add("animate__animated","animate__rotateOut", "animate__fast");
+    
+    ele.style.display = 'flex';
+    ele.classList.add("animate__animated","animate__slideInRight", "animate__faster");
+    closeEle.classList.add("animate__animated","animate__rotateIn", "animate__slower");
+    closeEle.style.display='flex';
+    
+    
+    closeEle.addEventListener('animationend',()=>{
+        hamBut.style.display="none";
+        hamBut.classList.remove("animate__animated","animate__rotateOut", "animate__fast");
+        ele.classList.remove("animate__animated","animate__slideInRight", "animate__faster");
+        closeEle.classList.remove("animate__animated","animate__rotateIn", "animate__slower");
+        })
+    
 }
+const closeSideDrawer = ()=>{
+    
+    document.querySelector('#overlay').style.display = 'none';
+    
+    closeEle.classList.add("animate__animated","animate__rotateOut", "animate__slower");
+    
+    ele.classList.add("animate__animated","animate__slideOutRight", "animate__faster");
+    
+    hamBut.classList.add("animate__animated","animate__rotateIn", "animate__slower");
+    hamBut.style.display='flex';
+    
+    ele.addEventListener('animationend',()=>{
+        ele.style.display="none";
+        closeEle.style.display="none";
+        
+       
+       
+        })
 
-$window.on('scroll resize', check_if_in_view);
-$window.trigger('scroll');
+}
 
 
 function scrollToSection(goToSection){
@@ -35,7 +51,7 @@ function scrollToSection(goToSection){
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    console.log('here')
+
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
     document.getElementById("nav-header").classList.add('animate__animated', 'animate__bounceOutUp','animate__fast');
   } else {
