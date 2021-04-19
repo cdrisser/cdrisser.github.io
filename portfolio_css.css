@@ -29,6 +29,24 @@ body{
   /* margin-bottom: 10% !important; */
   z-index: 5;
 }
+.ham-header {
+  
+position: fixed;
+  
+top:0;
+  
+left:0;
+  
+width:100%;
+  
+/* margin-bottom: 10% !important; */
+  
+z-index: 5;
+  
+display: none;
+  
+height: 60px;
+}
 
 #nav-list{
   list-style: none;
@@ -122,6 +140,7 @@ h4{
 .fab, .fas{
    margin: 25px 0 25px 5px;
    font-size:36px;
+   color: #335b7d;
 }
 
 .flex-change2{
@@ -168,6 +187,9 @@ h2{
   text-align:center;
   font-weight:lighter;
   color: #d9d9d9;
+
+        font-size:36px;
+    
 }
 .contact-me-resume{
   color:black;
@@ -220,21 +242,34 @@ max-width: 100%;
     border-radius: 15px;
 }
 .resume {color: #335b7d;padding: 10px 15px;border: 2px solid #335b7d;/* margin: auto; */border-radius: 4px;text-align: center;display: block;font-weight: 400;}
+
 .email-but {
-    color: #202122;
+    color: #335b7d;
     padding: 10px 15px;
-    border: 2px solid #212122;
+    border: 2px solid #335b7d;
     margin-top: 2rem;
     border-radius: 4px;
     text-align: center;
-    background-color: #335b7d;
+    background-color: transparent;
     font-weight: 600;
 }
-.resume:hover{
-    background-color: #335b7d;
-    border: 2px solid black;
-    color:black;
+.email-but:hover, .resume:hover{
+    background:linear-gradient(rgba(51,91,125,.3), rgba(51,91,125,.1));
+    font-weight:400;
+   
 }
+.cr-logo:hover{
+    background:linear-gradient(rgba(51,91,125,.3), rgba(51,91,125,.1));
+
+   
+}
+.project-icon{
+  color: #335b7d;
+  font-size: 36px;
+  padding: 1rem 0;
+}
+   
+
 
 .proj-title{
   display: block;
@@ -512,9 +547,10 @@ max-width: 100%;
     background-color:#335b7d;
 }
 #projects p {
-    text-align:center;
+    font-size: 32px;
+    /* text-align:center; */
     /* color:white; */
-    padding:1%;
+    padding-bottom: 2rem;
 }
 
 .project-ind {
@@ -525,21 +561,20 @@ max-width: 100%;
     border-radius: 15px;
     min-height: 100%;
     width: 100%;
-    max-width: 28rem;
-    margin:.25rem;
+    margin: 1rem;
+    /* min-width: 28rem; */
     border: 3px solid #335b7d;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech-used{
-    
-/* color: white; */
-    
-margin:auto;
-    
-list-style-type: none;
-    
-text-align: center;
-}
+    padding: 0 1rem;
+    margin:auto;
+    list-style-type: none;
+    text-align: center;
+    font-size:20px;
+    }
 
 
 
@@ -559,7 +594,6 @@ text-align: center;
     display:flex;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 .flex-change3{
   display:flex;
@@ -580,18 +614,12 @@ justify-content: center;
         font-size:36px;
     }
     
-    #projects p{
-        font-size:36px;
-    }
+  
     .project-ind p:nth-child(3) {
         font-size:30px !important;
     }
-    .tech-used{
-        font-size:20px !important;
-    }
-    h2{
-        font-size:36px;
-    }
+    
+   
     .resume{
         font-size: 18px;
         /* width:20%; */
@@ -689,10 +717,21 @@ hr{
 }
 
 .cr-logo {
-    transform: rotate(-45deg);
-    width:45px;
-    height:45px;
-   
+   position: fixed;
+   top: 20px;
+   left: 15px;
+   width: 70px;
+   height: 70px;
+   border: 2px solid #335b7d;
+   border-radius: 50%;
+   color:#335b7d;
+   font-size: 40px;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   font-weight:800;
+   padding:.5rem;
+   z-index: 6;
 }
 
 
@@ -702,7 +741,7 @@ hr{
     flex-direction: column;
     align-items:flex-start;
     width: 100%;
-    /* margin: 10rem 5rem 15rem 8rem; */
+
 }
 main {
     margin: 0px auto;
@@ -711,21 +750,6 @@ main {
     min-height: 100vh;
     padding: 150px 150px;
 }
-#logo-container {
-        position: fixed;
-        top: 20px;
-        left: 15px;
-        width: 70px;
-        height: 70px;
-        border: 2px solid #335b7d;
-        padding: .25rem;
-        transform: rotate(45deg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-}
-
 
 
 
@@ -805,6 +829,15 @@ main {
     #nav-header{
         display: none;
     }
+    .ham-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(rgba(35, 35, 35,.8),rgba(35,35,35,.8)),url(./images/milky.jpg);
+    }
+    .contact-methods{
+        flex-direction: row;
+    }
     .hamburger-button{
         display: flex;
         flex-direction: column;
@@ -830,7 +863,11 @@ main {
     background-color: transparent;
     }
 }
-
+@media only screen and (max-width: 680px){
+    main{
+        padding:125px 80px;
+    }
+}
 @media only screen and (max-width: 585px){
     .fab, .fas{
         font-size:24px;
@@ -847,22 +884,36 @@ main {
         width:1rem;
         height:1rem;
     }
+    main{
+        padding:125px 60px;
+    }
+    .sticky-contact-email{
+       display: none;
+    }
+    .sticky-contact-methods{
+        display:none;
+    }
+    .cr-logo{
+        display:none;
+    }
+       
 }
 @media only screen and (max-width: 471px){
     .project-ind{
         margin:25px 0;
     }
     
-    .sticky-contact-email{
-       display: none;
-    }
-    .sticky-contact-methods{
-        display:none;
-        
-    }
+    
     .icon-space{
         margin-left:0;
     }
     
 }
+
+
+ion-icon {
+    text-align: center;
+    display: block;
+}
+
 

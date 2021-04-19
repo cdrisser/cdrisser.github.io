@@ -11,6 +11,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel = "stylesheet" href="portfolio_css.css">
     <link
     rel="stylesheet"
@@ -37,6 +39,16 @@
         </div>
       </ul>
     </nav>
+      <nav class = "ham-header">
+          <div class = "contact-methods">
+        <div class ="contact-methods-bar"></div>
+      
+      <a class = "contact-me" href="https://www.linkedin.com/in/chrisrisser/" target="_blank"><i class="fab fa-linkedin icon-space"></i></a>
+      <a class = "contact-me" href="mailto:cdrisser@gmail.com"><i class="fas fa-at icon-space"></i></a>
+      <a class = "contact-me" href="http://www.github.com/cdrisser" target="_blank"><i class="fab fa-github icon-space" ></i></a>      
+        <div class ="contact-methods-bar"></div>
+            </div>
+      </nav>
       <div class = "hamburger-button" onclick="openSideDrawer()">
         <span></span>
         <span></span>
@@ -54,10 +66,9 @@
         </div>
       </div>
       
-      <div id="logo-container">
-    <a href="index.html"><img src="./images/cr-logo.png" class="cr-logo" >
+      
+    <a href="index.html" class="cr-logo" > <div>CR</div>
         </a>
-    </div>
       <div class = "sticky-contact-methods">
         <div class = "contact-methods">
         <div class ="contact-methods-bar"></div>
@@ -95,10 +106,11 @@
       
     <div class = "project-details ">
       <div class = "project-ind ">
+          <p>Calculator</p>
        <div><a href="projects/calc/calculator.html" class = "proj-title"><img src = "images/project_pics/calc.png" alt = "project screenshot" class ="project_ss">
          </a></div>
-          <p>Calculator</p>
-          <hr>
+          
+          <ion-icon class = "project-icon"  name="code-slash-outline"></ion-icon>
           <div class = tech-flexchange>
             <ul class = "tech-used">
                 <li>HTML5</li>
@@ -110,10 +122,11 @@
       </div>
         
       <div class =" project-ind">
+          <p>Jeopardy</p>
         <div><a href="projects/jeopardydev/index.html" class = "proj-title"><img src = "images/project_pics/jeopardy_ss.png" alt = "project screenshot" class ="project_ss">
         </a></div>
-          <p>Jeopardy</p>
-          <hr>
+          
+          <ion-icon class = "project-icon" name="code-slash-outline"></ion-icon>
           <div class = tech-flexchange>
               
             <ul class = "tech-used">
@@ -129,10 +142,11 @@
         </div>
       </div>
         <div class = project-ind>
+            <p>ACMP Web Application</p>
         <div><a href="https://acmp-290b2.web.app/" target="_blank" class = "proj-title"><img src = "images/project_pics/ACMP%20SNIP.PNG" alt = "project screenshot" class ="project_ss acmp-proj">
         </a></div>
-          <p>ACMP Web Application</p>
-            <hr>
+          
+            <ion-icon class = "project-icon"  name="code-slash-outline"></ion-icon>
           <div class = tech-flexchange>
               
             <ul class = "tech-used">
