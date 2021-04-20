@@ -187,9 +187,8 @@ h2{
   text-align:center;
   font-weight:lighter;
   color: #d9d9d9;
-
-        font-size:36px;
-    
+  /* font-size:36px; */
+  font-size: clamp(32px,8vw, 42px);
 }
 .contact-me-resume{
   color:black;
@@ -550,10 +549,10 @@ max-width: 100%;
     background-color:#335b7d;
 }
 #projects p {
-    font-size: 32px;
-    /* text-align:center; */
+    font-size: clamp();
     /* color:white; */
     padding-bottom: 2rem;
+    font-size: clamp(26px,5vw, 32px);
 }
 
 .project-ind {
@@ -565,18 +564,22 @@ max-width: 100%;
     min-height: 100%;
     width: 100%;
     margin: 1rem;
-    /* min-width: 28rem; */
+    max-width: 28rem;
     border: 3px solid #335b7d;
     justify-content: center;
     align-items: center;
 }
 
 .tech-used{
-    padding: 0 1rem;
+    padding: 0 .rem;
     margin:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     list-style-type: none;
     text-align: center;
-    font-size:20px;
+    /* font-size:20px; */
+    font-size: clamp(16px,4vw, 22px);
     }
 
 
@@ -596,7 +599,8 @@ max-width: 100%;
 .tech-flexchange {
     display:flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    width: 100%;
 }
 .flex-change3{
   display:flex;
@@ -695,7 +699,7 @@ hr{
 }
 
 .contact-bar-email {
-    display:block;
+    /* display: none; */
     transform: rotate(90deg);
     color:#335b7d;
     font-weight:400;
@@ -838,8 +842,11 @@ main {
         align-items: center;
         background-image: linear-gradient(rgba(35, 35, 35,.8),rgba(35,35,35,.8)),url(./images/milky.jpg);
     }
-    .contact-methods{
-        flex-direction: row;
+    .sticky-contact-methods{
+        display: none;
+    }
+    .sticky-contact-email{
+        display: none;
     }
     .hamburger-button{
         display: flex;
@@ -888,7 +895,7 @@ main {
         height:1rem;
     }
     main{
-        padding:125px 60px;
+        padding: 125px 44px;
     }
     .sticky-contact-email{
        display: none;
@@ -914,4 +921,14 @@ main {
 }
 
 
+
+
+.contact-methods-ham {
+   
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  width: 48px;
+}
 
