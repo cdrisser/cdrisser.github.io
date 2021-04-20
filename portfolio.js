@@ -3,18 +3,18 @@ const closeEle= document.querySelector('.sidedrawer-close');
 const hamBut = document.querySelector('.hamburger-button');
  const loadpage = document.getElementById('onloadanimation');
  const loadlogo = document.querySelector('.load-logo');
-const bodywrapper = document.querySelector('.body-wrapper');
+
 
 setTimeout(()=>{
-    loadlogo.classList.add("animate__animated","animate__zoomOutDown", "animate__faster")
+    loadlogo.classList.add("animate__animated","animate__zoomOut", "animate__faster")
     
     
     
     loadlogo.addEventListener('animationend',()=>{
-    loadlogo.classList.remove("animate__animated","animate__zoomOutDown",  "animate__faster")
+    loadlogo.classList.remove("animate__animated","animate__zoomOut",  "animate__faster")
     loadpage.style.display = 'none';
-    bodywrapper.classList.add("animate__animated", "animate__zoomIn",  "animate__faster")
-    bodywrapper.style.display = 'block';
+    document.body.classList.add("animate__animated", "animate__zoomIn",  "animate__slow")
+    
     
     
     },{once:true});

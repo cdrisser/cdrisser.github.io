@@ -247,7 +247,7 @@ max-width: 100%;
 
 .email-but {
     color: #335b7d;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border: 2px solid #335b7d;
     margin-top: 2rem;
     border-radius: 4px;
@@ -970,3 +970,8 @@ main {
     z-index: 100000;
     background-image: linear-gradient(rgba(35, 35, 35,.8),rgba(35,35,35,.8)),url("./images/milky.jpg");}
 
+
+.email_me_icon {
+    margin:0px;
+    font-size: 26px;
+}
