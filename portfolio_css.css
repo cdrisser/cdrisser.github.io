@@ -18,7 +18,7 @@ html {
 }
 body{
     height:100vh;
-   
+    /* display:none; */
 }
 
 #nav-header{
@@ -815,7 +815,6 @@ main {
   right: 0;
   bottom: 0;
   background-color: rgba(0,0,0,.7); /* Black background with opacity */
-  z-index: 2; 
   cursor: pointer; /* Add a pointer on hover */
   display:none;
 }
@@ -825,6 +824,37 @@ main {
     color: grey;
 }
 
+
+.contact-methods-ham {
+   
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  width: 48px;
+}
+
+
+.load-logo {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #335b7d;
+    border-radius: 50%;
+    color: #335b7d;
+    font-size: 40px;
+    font-weight: 800;
+    padding: .5rem;
+    animation:loadlogo 1.4s linear 1;
+}
+
+@keyframes loadlogo{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
 
 @media (max-width: 1080px){
 
@@ -923,12 +953,20 @@ main {
 
 
 
-.contact-methods-ham {
-   
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items:center;
-  width: 48px;
+.body-wrapper {
+    display: none;
 }
+
+#onloadanimation {
+
+    position: fixed; /* Sit on top of the page content */
+    display: flex; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */top: 0;left: 0;
+    right: 0;/* bottom: 0; */
+    cursor: pointer; /* Add a pointer on hover */
+    justify-content: center;
+    align-items:center;
+    z-index: 100000;
+    background-image: linear-gradient(rgba(35, 35, 35,.8),rgba(35,35,35,.8)),url("./images/milky.jpg");}
 

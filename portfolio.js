@@ -1,6 +1,25 @@
 const closeEle= document.querySelector('.sidedrawer-close');
  const ele1 =  document.getElementById('sidedrawer');
 const hamBut = document.querySelector('.hamburger-button');
+ const loadpage = document.getElementById('onloadanimation');
+ const loadlogo = document.querySelector('.load-logo');
+const bodywrapper = document.querySelector('.body-wrapper');
+
+setTimeout(()=>{
+    loadlogo.classList.add("animate__animated","animate__zoomOutDown", "animate__faster")
+    
+    
+    
+    loadlogo.addEventListener('animationend',()=>{
+    loadlogo.classList.remove("animate__animated","animate__zoomOutDown",  "animate__faster")
+    loadpage.style.display = 'none';
+    bodywrapper.style.display = 'block';
+    bodywrapper.classList.add("animate__animated", "animate__zoomIn",  "animate__faster")
+    
+    },{once:true});
+},1500);
+
+
 
 const openSideDrawer = ()=>{
    
