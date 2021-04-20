@@ -6,19 +6,19 @@ const openSideDrawer = ()=>{
    
     document.querySelector('#overlay').style.display = 'block';
     
-    hamBut.classList.add("animate__animated","animate__rotateOut", "animate__faster");
+    hamBut.classList.add("animate__animated","animate__rotateOut");
     
     ele1.style.display = 'flex';
     ele1.classList.add("animate__animated","animate__slideInRight");
-    closeEle.classList.add("animate__animated","animate__rotateIn", "animate__faster");
+    closeEle.classList.add("animate__animated","animate__rotateIn");
     closeEle.style.display='flex';
     
         ele1.addEventListener('animationend',()=>{
             console.log("here1")
         hamBut.style.display="none";
-        hamBut.classList.remove("animate__animated","animate__rotateOut", "animate__faster");
-        ele1.classList.remove("animate__animated","animate__slideInRight", "animate__faster");
-        closeEle.classList.remove("animate__animated","animate__rotateIn", "animate__faster");
+        hamBut.classList.remove("animate__animated","animate__rotateOut");
+        ele1.classList.remove("animate__animated","animate__slideInRight" );
+        closeEle.classList.remove("animate__animated","animate__rotateIn");
         },{once:true});
         
        
@@ -31,11 +31,11 @@ const openSideDrawer = ()=>{
 const closeSideDrawer = ()=>{
     document.querySelector('#overlay').style.display = 'none';
     
-    closeEle.classList.add("animate__animated","animate__rotateOut", "animate__faster");
+    closeEle.classList.add("animate__animated","animate__rotateOut");
     
     
     ele1.classList.add("animate__animated","animate__slideOutRight");
-    hamBut.classList.add("animate__animated","animate__rotateIn", "animate__faster");
+    hamBut.classList.add("animate__animated","animate__rotateIn");
     hamBut.style.display ='flex';
     
         ele1.addEventListener('animationend',()=>{
@@ -43,9 +43,9 @@ const closeSideDrawer = ()=>{
         ele1.style.display = 'none';
         
         closeEle.style.display="none";
-         closeEle.classList.remove("animate__animated","animate__rotateOut", "animate__faster");
-        ele1.classList.remove("animate__animated","animate__slideOutRight", "animate__faster");
-        hamBut.classList.remove("animate__animated","animate__rotateIn", "animate__faster");
+         closeEle.classList.remove("animate__animated","animate__rotateOut");
+        ele1.classList.remove("animate__animated","animate__slideOutRight");
+        hamBut.classList.remove("animate__animated","animate__rotateIn");
         },{once:true})
    
       
