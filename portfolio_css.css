@@ -268,7 +268,7 @@ max-width: 100%;
 .project-icon{
   color: #335b7d;
   font-size: 36px;
-  padding: 1rem 0;
+  padding: 1rem 0 .5rem;
 }
    
 
@@ -643,7 +643,7 @@ justify-content: center;
 }
 hr{
     width:50%;
-    margin:.5rem auto 1rem;
+    margin: 0 auto 1rem;
     border: 1px solid #335b7d;
 }
 #skills{

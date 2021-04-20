@@ -13,8 +13,9 @@ setTimeout(()=>{
     loadlogo.addEventListener('animationend',()=>{
     loadlogo.classList.remove("animate__animated","animate__zoomOutDown",  "animate__faster")
     loadpage.style.display = 'none';
-    bodywrapper.style.display = 'block';
     bodywrapper.classList.add("animate__animated", "animate__zoomIn",  "animate__faster")
+    bodywrapper.style.display = 'block';
+    
     
     },{once:true});
 },1500);
