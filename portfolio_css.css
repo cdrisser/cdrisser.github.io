@@ -190,6 +190,8 @@ h2{
   color: #d9d9d9;
   /* font-size:36px; */
   font-size: clamp(32px,8vw, 42px);
+  text-align: justify;
+  /* margin-left: 100px; */
 }
 .contact-me-resume{
   color:black;
@@ -270,7 +272,7 @@ h2{
 .project-icon{
   color: #335b7d;
   font-size: 53px;
-  padding: 1rem 0 .5rem;
+  padding: 2rem 0 .5rem;
 }
    
 
@@ -605,6 +607,7 @@ h2{
     display:flex;
     justify-content: center;
     width: 100%;
+    margin-top: 00px;
 }
 .flex-change3{
   display:flex;
@@ -655,7 +658,7 @@ hr{
    display:flex;
    justify-content: center;
    flex-wrap: wrap;
-   margin-top: 1;
+   margin-top: 3rem;
 }
 .skills-container{
     display:flex;
@@ -720,7 +723,8 @@ hr{
     margin-bottom:65px;
 }
 .email2 {
-   margin-top: 121px;
+   
+margin-top: 121px;
 }
 
 .top-blue-line {
@@ -902,6 +906,17 @@ main {
     border: 1px solid #335b7d;
     background: #335b7d;
 }
+.headings-flex {
+    display:flex;
+    align-items: center;
+}
+
+
+.heading-arrow {
+    font-size:36px;
+    color: #335b7d;
+}
+
 
 
 
@@ -1003,8 +1018,8 @@ main {
             /* margin: 0; */
             /* background-color: rgb(31 31 32); */
     }
-    .projects-hr{
-        display:block;
+    h2{
+        margin-left:25px;
     }
 }
 @media only screen and (max-width: 471px){
@@ -1018,6 +1033,8 @@ main {
     }
     
 }
+
+
 
 
 
