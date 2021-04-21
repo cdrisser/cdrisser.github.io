@@ -41,25 +41,23 @@ width:75%;
 #currentmath{
   width: 100%;
   text-align: right;
-  font-size: 18px;
-  font-weight:600;
+  font-size: 21px;
+  /* font-weight:600; */
   background-color:#65737e;
-  color:#c73530;
+  color: #2871ba;
   font-family: 'Orbitron', sans-serif;
   padding: 15px 0;
-    height:10%;
- 
-
+  height: 2%;
 }
 #display{
   padding: 15px 2px;
   font-size:30px;
-  background-color:#65737e;
+  background-color: #65737e;
   text-align: right;
   color: white;
   font-family: 'Orbitron', sans-serif;
   vertical-align: bottom;
-    height:10;
+  height: 5%;
 }
 
 #grid{
@@ -110,7 +108,9 @@ height:5%;
 .diffbackground {
     background-color:#2871ba;
 }
-
+.diffbackground:hover {
+    background-color: #2871ba;
+}
 .math-display {
     height:25%;
 }

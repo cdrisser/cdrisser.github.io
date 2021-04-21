@@ -167,13 +167,14 @@ a
   /* margin: 5rem; */
   /* transform: rotate(90deg); */
   width: 48px;
+  position: relative;
 }
 .sticky-contact-methods{
     left:5;
     top:90;
     position: fixed;
     left: 2vw;
-    top: 60vh;
+    top: 80vh;
 }
 .horiz-line{
   border: 2px solid var(--white);
@@ -222,7 +223,7 @@ h2{
   display:flex;
   justify-content: center;
   align-items: flex-start;
-  /* margin: 0 5rem; */
+  margin-top: 3rem;
   flex-wrap: wrap;
   margin-bottom:50px;
 }
@@ -239,7 +240,7 @@ h2{
   background-color:black;
   border: 2px solid #232323;
   /* border-radius: 15px; */
-  opacity: .7;
+  opacity: 0.5;
 }
 .tech-used  li {
     padding: .25rem;
@@ -558,7 +559,7 @@ h2{
 
 .project-ind {
     display: flex;
-    padding: 1em;
+    padding: 1rem;
     flex-direction: column;
     /* background-color: #1c1c1c; */
     border-radius: 15px;
@@ -566,9 +567,12 @@ h2{
     width: 100%;
     margin: 1rem;
     max-width: 28rem;
-    border: 3px solid #335b7d;
+    /* border: 3px solid #335b7d; */
     justify-content: center;
     align-items: center;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 7px #335b7d;
 }
 
 .tech-used{
@@ -579,8 +583,8 @@ h2{
     align-items: flex-start;
     list-style-type: none;
     text-align: center;
-    /* font-size:20px; */
     font-size: clamp(22px,4vw, 22px);
+    
     }
 
 
@@ -600,7 +604,6 @@ h2{
 .tech-flexchange {
     display:flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
     width: 100%;
 }
 .flex-change3{
@@ -695,27 +698,29 @@ hr{
 }
 .sticky-contact-email {
     position: fixed;
-    top: 60vh;
+    top: 80vh;
     right: 2vw;
 }
 
 .contact-bar-email {
-    /* display: none; */
+    display: block;
     transform: rotate(90deg);
     color:#335b7d;
     font-weight:400;
     /* margin-left: 15px; */
+    position: relative;
+    top: 54px;
 }
 
 .contact-methods-bar-email {
+    FONT-WEIGHT: 200;
     width:2.5px;
     height: 100px;
     background-color:#335b7d;
     margin-bottom:65px;
 }
 .email2 {
-   
-    margin-top:65px;
+   margin-top: 121px;
 }
 
 .top-blue-line {
@@ -893,7 +898,7 @@ main {
 .projects-hr {
     display:none;
     width:80%;
-    margin: 1rem auto 0;
+    margin: 1rem auto;
     border: 1px solid #335b7d;
     background: #335b7d;
 }
@@ -977,7 +982,7 @@ main {
         height:1rem;
     }
     main{
-        padding: 125px 0px;
+        padding: 125px 5px;
     }
     .sticky-contact-email{
        display: none;
@@ -991,10 +996,10 @@ main {
     }
     .project-ind{
             border-color:transparent;
-            border-radius: 0;
+            /* border-radius: 0; */
             /* border-bottom: 1px dotted #335b7d; */
             height:100vh;
-            padding: 0;
+            padding: 1rem;
             margin: 0;
             /* background-color: rgb(31 31 32); */
     }
