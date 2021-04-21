@@ -13,7 +13,7 @@ setTimeout(()=>{
     loadlogo.addEventListener('animationend',()=>{
     loadlogo.classList.remove("animate__animated","animate__zoomOut",  "animate__faster")
     loadpage.style.display = 'none';
-    document.body.classList.add("animate__animated", "animate__zoomIn",  "animate__slow")
+    document.body.classList.add("animate__animated", "animate__bounceInUp",  "animate__slow")
     
     
     
