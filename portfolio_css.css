@@ -240,7 +240,7 @@ h2{
   background-color:black;
   border: 2px solid #232323;
   /* border-radius: 15px; */
-  opacity: 0.5;
+  opacity: .7;
 }
 .tech-used  li {
     padding: .25rem;
@@ -1000,7 +1000,7 @@ main {
             /* border-bottom: 1px dotted #335b7d; */
             height:100vh;
             padding: 1rem;
-            margin: 0;
+            /* margin: 0; */
             /* background-color: rgb(31 31 32); */
     }
     .projects-hr{

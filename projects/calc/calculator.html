@@ -9,6 +9,10 @@
     <link  href= "calcstyle.css" type="text/css" rel = "stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href='../../icons/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href="../../icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../icons/favicon-16x16.png">
+    <link rel="manifest" href="../../icons/site.webmanifest">
 
   </head>
   <body >
@@ -24,22 +28,23 @@
         <button class = "number" onclick ="operation(7)">7</button>
         <button class = "number" onclick ="operation(8)">8</button>
         <button class = "number" onclick ="operation(9)">9</button>
-        <button class = "number" onclick ="action('/')">/</button>
+        <button class = "number operator" onclick ="action('/')">/</button>
         <button class = "number" onclick ="operation(4)">4</button>
         <button class = "number" onclick ="operation(5)">5</button>
         <button class = "number" onclick ="operation(6)">6</button>
-        <button class = "number" onclick ="action('x')">x</button>
+        <button class = "number operator" onclick ="action('x')">x</button>
         <button class = "number" onclick ="operation(1)">1</button>
         <button class = "number" onclick ="operation(2)">2</button>
         <button class = "number" onclick ="operation(3)">3</button>
-        <button class = "number" onclick ="action('-')">-</button>
+        <button class = "number operator" onclick ="action('-')">-</button>
         <button class = "number" onclick ="operation(0)">0</button>
         <button class = "number" onclick ="operation('.')">.</button>
         <button class = "number diffbackground" onclick ="calculate()">=</button>
-        <button class = "number" onclick ="action('+')">+</button>
+        <button class = "number operator" onclick ="action('+')">+</button>
   
-  <button id="resetbut"  onclick ="reset()">Reset</button>
+  
 </div>
+    <button id="resetbut"  onclick ="reset()">Reset</button>
 </div>
 </div>
   </body>
