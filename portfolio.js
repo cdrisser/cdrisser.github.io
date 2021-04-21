@@ -6,18 +6,16 @@ const hamBut = document.querySelector('.hamburger-button');
 
 
 setTimeout(()=>{
-    loadlogo.classList.add("animate__animated","animate__zoomOut", "animate__faster")
+    loadlogo.classList.add("animate__animated","animate__bounceOutDown")
     
     
     
     loadlogo.addEventListener('animationend',()=>{
-    loadlogo.classList.remove("animate__animated","animate__zoomOut",  "animate__faster")
+    loadlogo.classList.remove("animate__animated","animate__bounceOutDown")
     loadpage.style.display = 'none';
-    document.body.classList.add("animate__animated", "animate__bounceInUp",  "animate__slow")
-    
-    
-    
+    document.body.classList.add("animate__animated", "animate__bounceInUp")
     },{once:true});
+    
 },1500);
 
 
@@ -84,6 +82,7 @@ function scrollToSection(goToSection){
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
+    document.body.classList.remove("animate__animated", "animate__bounceInUp")
 
   if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
     document.getElementById("nav-header").classList.add('animate__animated', 'animate__bounceOutUp','animate__fast');
