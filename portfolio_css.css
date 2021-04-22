@@ -60,6 +60,7 @@ height: 60px;
     padding: 10px 15px;
     cursor: pointer;
     font-weight: 400;
+    font-size: 14px;
 }
 #nav-list li a{
     width:100%;
@@ -132,11 +133,39 @@ h4{
    font-weight:lighter;
 
 }
-#projects{
 
-    background-image:black;
-  
+.project-add-p{
+    font-size:16px !important;
+    width: auto !important;
+    /* margin: 0 auto; */
 }
+
+
+.projects-p-addprojects {
+  display: inline-block;
+  position: relative;
+  color: #335b7d;
+font-size:16px !important;
+}
+
+.projects-p-addprojects:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #335b7d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.projects-p-addprojects:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .fab, .fas{
    margin: 25px 0 25px 5px;
    font-size:36px;
@@ -163,9 +192,6 @@ a
   flex-direction: column;
   justify-content: flex-start;
   align-items:center;
-  /* flex-wrap: wrap; */
-  /* margin: 5rem; */
-  /* transform: rotate(90deg); */
   width: 48px;
   position: relative;
 }
@@ -224,7 +250,7 @@ h2{
 .project-details{
   display:flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 3rem;
   flex-wrap: wrap;
   margin-bottom:50px;
@@ -247,7 +273,7 @@ h2{
 .tech-used  li {
     padding: .25rem;
 }
-.resume {color: #335b7d;padding: 10px 15px;border: 2px solid #335b7d;/* margin: auto; */border-radius: 4px;text-align: center;display: block;font-weight: 400;}
+.resume {color: #335b7d;padding: 10px 15px;border: 2px solid #335b7d;/* margin: auto; */border-radius: 4px;text-align: center;display: block;font-weight: 400;font-size: 14px;}
 
 .email-but {
     color: #335b7d;
@@ -286,14 +312,6 @@ h2{
   background-color:var(--white);
 }
 
-.close-resume {
-    /* width:5%; */
-    /* color:black; */
-    background: none;
-    /* justify-self: flex-end; */
-    /* margin-left:auto; */
-    border:none;
-}
 
 #skills-container {
     display:flex;
@@ -417,37 +435,6 @@ h2{
     
 }
 
-.diploma { 
-   width:500px;
-    margin: 2%;
-
-}
-
-#experience-container {
-    display:flex;
-    flex-direction: column;
-    padding:15px 0;
-    margin-bottom:35px;
-    width: 100%;
-    
-}
-
-
-.experience1, .experience2, .experience3, .experience4 {
-    border-left:2px solid black;
-    padding-left:5%;
-    padding-top: 2.5%;
-    padding-bottom:2.5%;
-    font-size:24px;
-    margin:15px 0;
-   
-    
-}
-.experience-wrap {
-    display: flex;
-    
-}
-
 
 .experience-header p {
     font-size:16px;
@@ -494,29 +481,7 @@ h2{
     font-size: 18px;
 }
 
-.exper-common p {
-    margin: 10px 0;
-}
 
-.amazon {
-    width:100%;
-}
-
-.art {
-    width:100%;
-}
-
-.neighborhood {
-    width:100%;
-}
-
-.usmc {
-    width:100%;
-}
-
-.work-details p {
-   margin: 7.5px 0;
-}
 
 .projects-line {
     width:10%;
@@ -546,6 +511,7 @@ h2{
     color:#ffffff;
     /* padding: 2px 15px; */
     /* font-size: 18px; */
+    /* font-weight: 100; */
 }
 .contact-methods-bar{
     width: 2px;
@@ -619,33 +585,6 @@ justify-content: center;
     
 }
 
-@media only screen and (max-width: 1001px){
-    .diploma{
-        width:60%;
-    }
-    
-    
-}
-@media only screen and (min-width: 900px){
-    .contact-header{
-        font-size:36px;
-    }
-    
-  
-    .project-ind p:nth-child(3) {
-        font-size:30px !important;
-    }
-    
-   
-    .resume{
-        font-size: 18px;
-        /* width:20%; */
-    }
-  
-    #nav-list li{
-        font-size: 18px;
-    }
-}
 
 
 .acmp-proj {
@@ -852,15 +791,10 @@ main {
 
 
 .contact-methods-ham {
-   
 display:flex;
-   
 flex-direction: row;
-   
 justify-content: space-around;
-   
 align-items:center;
-   
 width: 150px;
 }
 
@@ -932,6 +866,34 @@ main {
     padding: 125px 100px;
 }
 }
+@media only screen and (max-width: 1001px){
+    .diploma{
+        width:60%;
+    }
+    
+    
+}
+@media only screen and (min-width: 900px){
+    .contact-header{
+        font-size:36px;
+    }
+    
+  
+    .project-ind p:nth-child(3) {
+        font-size:30px !important;
+    }
+    
+   
+    .resume{
+        font-size: 18px;
+        /* width:20%; */
+    }
+  
+    #nav-list li{
+        font-size: 18px;
+    }
+}
+
 @media (max-width:764px){
     #nav-header{
         display: none;
@@ -1039,10 +1001,6 @@ main {
     }
     
 }
-
-
-
-
 
 
 
