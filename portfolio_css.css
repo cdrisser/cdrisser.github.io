@@ -659,9 +659,7 @@ hr{
     /* transform: rotate(90deg); */
     color:#335b7d;
     font-weight: 400;
-    /* margin-left: 15px; */
-    /* position: relative; */
-    /* top: 54px; */
+    margin-left: 15px; 
     margin-bottom: 10px;
     writing-mode: vertical-rl;
 }
