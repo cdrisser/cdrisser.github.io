@@ -76,7 +76,8 @@ const closeSideDrawer = ()=>{
 
 
 function scrollToSection(goToSection){
-       console.log(goToSection); document.getElementById(goToSection).scrollIntoView({behavior:'smooth', block:'start'})
+      document.getElementById(goToSection).scrollIntoView({behavior:'smooth', block:'start'})
+    closeSideDrawer();
         }
 
 window.onscroll = function() {scrollFunction()};
