@@ -661,7 +661,7 @@ hr{
     font-weight: 400;
     margin-left: 15px; 
     margin-bottom: 10px;
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
 }
 
 .contact-methods-bar-email {
