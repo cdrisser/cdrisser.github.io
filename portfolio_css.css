@@ -585,18 +585,7 @@ h2{
     margin-top: 00px;
     color: #a19e9e;
 }
-.flex-change3{
-  display:flex;
-justify-content: center;
-    align-items: center;
-    
-}
 
-
-
-.acmp-proj {
-    /* object-fit: cover; */
-}
 hr{
     width:50%;
     margin: 0 auto 1rem;
@@ -1002,4 +991,8 @@ main {
 
 #projects {
         margin-top: 4rem;
+}
+
+.color-touch-span {
+    color:#335b7d;
 }
